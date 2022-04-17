@@ -1,0 +1,4 @@
+value = int(input("Enter a number: "))
+TF = 50 + (value -40)/4
+TC = 10 + (value -40)/7
+print("temperature (Fahrenheit): {}\ntemperature (Celsius): {}".format(TF,TC))

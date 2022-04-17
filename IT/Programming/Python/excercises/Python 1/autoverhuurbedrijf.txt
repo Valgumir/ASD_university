@@ -1,0 +1,12 @@
+import math
+
+e = float(input("Geef de hoeveelheid kilometer in voor het huren: ")) #666.666
+b = float(input("Geef de hoeveelheid kilometer in na het huren: ")) #123.789
+l = float(input("Geef de hoeveelheid liter in: ")) #62.5
+
+kmdriven = e - b
+consumption = l / (kmdriven / 100)
+
+consumption = round(consumption, 6)
+
+print(abs(consumption))

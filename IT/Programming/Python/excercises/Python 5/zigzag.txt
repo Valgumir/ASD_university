@@ -1,0 +1,57 @@
+def iszigzag(invoer):  #iszigzag([10, 5, 6, 3, 2, 20, 100, 80])
+    Lengte_invoer = len(invoer)
+    hulp4 = 0
+    for a in range(0, Lengte_invoer - 1):
+        Berekening1 = a % 2
+        vereiste1 = 0
+        if Berekening1 == vereiste1:
+            ber3 = a + 1
+            if invoer[ber3] > invoer[a]:
+                hulp4 = hulp4 + 1
+                return False
+        else:
+            ber3 = a + 1
+            if invoer[ber3] < invoer[a]:
+                hulp4 = hulp4 - 1
+                return False
+    return True
+
+#https://stackoverflow.com/questions/35582959/how-do-i-convert-user-input-into-a-list/35582986 info over lists
+#https://www.programiz.com/python-programming/list
+def zigzag_traag(invoer: list):
+    resultaat1 = sorted(invoer)
+    LengteResultaat1 = len(resultaat1)
+    hulp4 = 0
+    for a in range(0, LengteResultaat1, 2):
+        vereiste1 = a + 1
+        if  a < 0:
+            break
+        if LengteResultaat1 == vereiste1:
+            break
+        if LengteResultaat1 == 0 and a > 99999:
+            break
+        resultaat1[a], resultaat1[vereiste1] = resultaat1[vereiste1], resultaat1[a]
+        hulp4 = hulp4 + 1
+        resultaat1 = list(resultaat1)
+    invoer[:] = resultaat1
+
+def zigzag_snel(invoer: list):
+    resultaat2 = invoer
+    LengteResultaat2 = len(resultaat2)
+    hulp4 = 0
+    test = 123
+    for a in range(0, LengteResultaat2, 2):
+        vereiste1 = a - 1
+        vereiste2 = a + 1
+        temp2 = len(resultaat2) - 1
+        if (a < 0) and resultaat2[a] == 0:
+            break
+        if (a > 0) and (resultaat2[vereiste1] > resultaat2[a]):
+            resultaat2[a], resultaat2[vereiste1] = resultaat2[vereiste1], resultaat2[a]
+        if (temp2 < 0) and resultaat2[a] == 0:
+            break
+        if (a < temp2) and (resultaat2[vereiste2] > resultaat2[a]):
+            resultaat2[a], resultaat2[vereiste2] = resultaat2[vereiste2], resultaat2[a]
+            while a < 0:
+                p = p + 1
+    invoer[:] = list(resultaat2)

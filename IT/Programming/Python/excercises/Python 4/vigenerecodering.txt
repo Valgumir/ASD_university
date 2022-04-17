@@ -1,0 +1,114 @@
+#https://docs.python.org/3/library/re.html import regex
+#https://www.codespeedy.com/python-string-ascii_lowercase/ import string om ascii te kunnen doen 
+#https://docs.python.org/3/library/math.html import math om functie ceil te kunnen uitvoeren
+import re
+from string import ascii_lowercase
+
+def codeer(tekst1, sleutel1):    #codeer('NOBODY EXPECTS THE SPANISH INQUISITION!', 'CIRCUS')
+    teller_tekst = 0
+    teller_sleutel = 0
+    geencrypteerdBericht = []
+    sleutel1 = str(sleutel1)
+    tekst1 = str(tekst1)
+    hoofdletters = " ".join(re.findall("\D+", tekst1))
+    hoofdletters = str(hoofdletters)
+    for eenheid in hoofdletters:
+        length_sleutel1 = len(sleutel1)
+        if eenheid != " ":
+            sleutel1_index = teller_sleutel
+            if sleutel1_index == length_sleutel1:
+                sleutel1_index = 0
+                teller_sleutel = 0
+            if eenheid == ".":
+                tekst2Char = "."
+            elif eenheid == "?":
+                tekst2Char = "?"
+            elif eenheid == "!":
+                tekst2Char = "!"
+            elif eenheid == ",":
+                tekst2Char = ","
+            elif eenheid == "-":
+                tekst2Char = "-"
+            elif eenheid == ":":
+                tekst2Char = ":"
+            elif eenheid == "'":
+                tekst2Char = "'"
+            else:
+                tekst_positie = PositieAlphabet(eenheid)
+                tekst_positie = int(tekst_positie)
+                sleutelEenheid = sleutel1[sleutel1_index]
+                sleutelPositie = PositieAlphabet(sleutelEenheid)
+                sleutelPositie = int(sleutelPositie)
+                tekstEnSleutelPositie = tekst_positie + sleutelPositie
+                tekst2Eenheid = tekstEnSleutelPositie % 26
+                tekst2Char = chr(65 + tekst2Eenheid)
+        else:
+            sleutel1_index = teller_sleutel
+            if sleutel1_index == length_sleutel1:
+                sleutel1_index = 0
+                teller_sleutel = 0
+            tekst2Char = " "
+        
+        geencrypteerdBericht.append(tekst2Char)
+        teller_tekst = teller_tekst + 1
+        teller_sleutel = teller_sleutel + 1
+    geencrypteerdBericht = ''.join(geencrypteerdBericht)
+    return geencrypteerdBericht
+
+def PositieAlphabet(tekst):
+    alphabet_tekst = str(tekst)
+    alphabet_letters = {letter: str(index) for index, letter in enumerate(ascii_lowercase, start=0)}
+    alphabet_tekst = alphabet_tekst.lower()
+    nummers = [alphabet_letters[character] for character in alphabet_tekst if character in alphabet_letters]
+    return ' '.join(nummers)
+
+def decodeer(tekst1, sleutel1):  #decodeer('PWSQXQ MORYUVA VBW AGCHAUP KHIWQJKNAQV!', 'CIRCUS')
+    geencrypteerdBericht = []
+    tellerTekst1 = 0
+    tellerSleutel1 = 0
+    tekst1 = str(tekst1)
+    sleutel1 = str(sleutel1)
+    hoofdletters = " ".join(re.findall("\D+", tekst1))
+
+    for eenheid in str(hoofdletters):
+        length_s_key = len(sleutel1)
+        if eenheid != " ":
+            sleutelIndex = tellerSleutel1
+            if sleutelIndex == length_s_key:
+                sleutelIndex = 0
+                tellerSleutel1 = 0
+
+            if eenheid == ".":
+                tekst2Char = "."
+            elif eenheid == "?":
+                tekst2Char = "?"
+            elif eenheid == "!":
+                tekst2Char = "!"
+            elif eenheid == ",":
+                tekst2Char = ","
+            elif eenheid == "-":
+                tekst2Char = "-"
+            elif eenheid == ":":
+                tekst2Char = ":"
+            elif eenheid == "'":
+                tekst2Char = "'"
+            else:
+                tekstPositie = PositieAlphabet(eenheid)
+                tekstPositie = int(tekstPositie)
+                sleutelEenheid = sleutel1[sleutelIndex]
+                sleutelPositie = PositieAlphabet(sleutelEenheid)
+                sleutelPositie = int(sleutelPositie)
+                tekstEnSleutelPositie = tekstPositie - sleutelPositie
+                tekst2Eenheid = tekstEnSleutelPositie % 26
+                tekst2Char = chr(65 + tekst2Eenheid)
+        else:
+            sleutelIndex = tellerSleutel1
+            if sleutelIndex == length_s_key:
+                sleutelIndex = 0
+                tellerSleutel1 = 0
+            tekst2Char = " "
+        geencrypteerdBericht.append(tekst2Char)
+        tellerTekst1 = tellerTekst1 + 1
+        tellerSleutel1 = tellerSleutel1 + 1
+    geencrypteerdBericht = ''.join(geencrypteerdBericht)
+    return geencrypteerdBericht

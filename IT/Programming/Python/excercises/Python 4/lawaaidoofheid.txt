@@ -1,0 +1,12 @@
+def maximale_blootstelling(decibel):
+    sec = 8 * 60 * 60
+    get1 = 80
+     
+    while get1 <= decibel:
+        sec /= 2
+        get1 += 3
+
+    if decibel < 80:
+        return -1.0
+    else:
+        return (sec*2)   

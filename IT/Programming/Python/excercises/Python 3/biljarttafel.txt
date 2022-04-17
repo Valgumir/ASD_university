@@ -1,0 +1,27 @@
+tafelhoogte = input()   #6
+tafelbreedte = input()  #8
+tafelhoogte = int(tafelhoogte)
+tafelbreedte = int(tafelbreedte)
+pockets = [[0, 0], [tafelbreedte, 0], [0, tafelhoogte], [tafelbreedte, tafelhoogte]]
+directies = [[1, 1], [1, -1], [-1, -1], [-1, 1]]
+positie = [0, 0]
+directie = 0
+uitkomsten = {(0, 0): "linkeronderpocket", (0, tafelhoogte): "linkerbovenpocket", (tafelbreedte, tafelhoogte): "rechterbovenpocket", (tafelbreedte, 0): "rechteronderpocket", (tafelbreedte+1, 0): "onderband", (tafelbreedte+1, tafelhoogte): "bovenband", (0, tafelhoogte+1): "linkerband", (tafelbreedte, tafelhoogte+1): "rechterband"}
+#Zie website voor meer info zip functie en tuple https://www.w3schools.com/python/ref_func_zip.asp
+while 1:
+    positie = [x + y for x, y in zip(positie, directies[directie])]
+    if positie in pockets:
+        print(uitkomsten[tuple(positie)], tuple(positie))
+        break
+    if positie[0] == tafelbreedte or positie[0] == 0:
+        if directie == 2 or directie == 0:
+            directie = (directie - 1) % len(directies)
+        else:
+            directie = (directie + 1) % len(directies)
+        print(uitkomsten[(positie[0], tafelhoogte+1)], tuple(positie))
+    if positie[1] == tafelhoogte or positie[1] == 0:
+        if directie == 1 or directie == 3:
+            directie = (directie - 1) % len(directies)
+        else:
+            directie = (directie + 1) % len(directies)
+        print(uitkomsten[(tafelbreedte + 1, positie[1])], tuple(positie))

@@ -1,0 +1,30 @@
+import math
+
+get1 = float(input())  #1.0
+get2 = float(input())  #-5.0
+get3 = float(input())  #6.0
+
+wortel1 = 0
+wortel2 = 0
+discriminant = ((get2**2))-(4*get1*get3)
+
+if discriminant < 0:
+    print("geen wortels")
+elif discriminant == 0:
+    wortel1 = -(get2/2*get1)
+    print("een wortel")
+    print(wortel1)
+elif discriminant > 0:
+    wortel1 = round((-get2-math.sqrt(discriminant)) / (2 * (get1)),6)
+    wortel2 = round((-get2+math.sqrt(discriminant)) / (2 * (get1)),6)
+    
+    #kleinste getal van boven
+    print("twee wortels")
+    if wortel1 > wortel2:
+        print(wortel2)
+        print(wortel1)
+    else:
+        print(wortel1)
+        print(wortel2)
+else:
+    print("error")

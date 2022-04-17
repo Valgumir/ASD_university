@@ -1,0 +1,123 @@
+invoer1 = str(input())
+invoer2 = str(input())
+invoer3 = str(input())
+#enkel rood niet draaien
+if invoer1 == "kleur":
+    if invoer2 == "rood":
+        if invoer3 == "ja":
+            print("Fout: kaarten met kleur rood moeten niet gedraaid worden.")
+        elif invoer3 == "nee":
+            print("Juist: kaarten met kleur rood moeten niet gedraaid worden.")
+    elif invoer2 == "bruin":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur bruin moeten gedraaid worden.")
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur bruin moeten gedraaid worden.")
+    elif invoer2 == "wit":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur wit moeten gedraaid worden.")        
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur wit moeten gedraaid worden.")
+    elif invoer2 == "paars":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur paars moeten gedraaid worden.")           #dit is juist volgens dodona
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur paars moeten gedraaid worden.")
+    elif invoer2 == "groen":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur groen moeten gedraaid worden.")           #dit is juist volgens dodona
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur groen moeten gedraaid worden.")
+    elif invoer2 == "oranje":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur oranje moeten gedraaid worden.")         #dit is juist volgens dodona
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur oranje moeten gedraaid worden.")
+    elif invoer2 == "blauw":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur blauw moeten gedraaid worden.")           
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur blauw moeten gedraaid worden.")
+    elif invoer2 == "zwart":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur zwart moeten gedraaid worden.")           
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur zwart moeten gedraaid worden.")
+    elif invoer2 == "geel":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur geel moeten gedraaid worden.")           
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur geel moeten gedraaid worden.")
+    elif invoer2 == "magenta":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur magenta moeten gedraaid worden.")           
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur magenta moeten gedraaid worden.")
+    elif invoer2 == "roze":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur roze moeten gedraaid worden.")           
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur roze moeten gedraaid worden.")
+    elif invoer2 == "grijs":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur grijs moeten gedraaid worden.")           
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur grijs moeten gedraaid worden.")
+    elif invoer2 == "cyaan":
+        if invoer3 == "ja":
+            print("Juist: kaarten met kleur cyaan moeten gedraaid worden.")           
+        elif invoer3 == "nee":
+            print("Fout: kaarten met kleur cyaan moeten gedraaid worden.")
+
+elif invoer1 == "waarde":
+    if invoer2 == "1":
+        if invoer3 == "ja":
+            print("Fout: kaarten met waarde 1 moeten niet gedraaid worden.")
+        elif invoer3 == "nee":
+            print("Juist: kaarten met waarde 1 moeten niet gedraaid worden.")
+    elif invoer2 == "2":
+        if invoer3 == "ja":
+            print("Juist: kaarten met waarde 2 moeten gedraaid worden.")
+        elif invoer3 == "nee":
+            print("Fout: kaarten met waarde 2 moeten gedraaid worden.")
+    elif invoer2 == "3":
+        if invoer3 == "ja":
+            print("Fout: kaarten met waarde 3 moeten niet gedraaid worden.")       #juist volgens dodona
+        elif invoer3 == "nee":
+            print("Juist: kaarten met waarde 3 moeten niet gedraaid worden.")
+    elif invoer2 == "4":
+        if invoer3 == "ja":
+            print("Juist: kaarten met waarde 4 moeten gedraaid worden.")
+        elif invoer3 == "nee":
+            print("Fout: kaarten met waarde 4 moeten gedraaid worden.")
+    elif invoer2 == "5":
+        if invoer3 == "ja":
+            print("Fout: kaarten met waarde 5 moeten niet gedraaid worden.")
+        elif invoer3 == "nee":
+            print("Juist: kaarten met waarde 5 moeten niet gedraaid worden.")
+    elif invoer2 == "6":
+        if invoer3 == "ja":
+            print("Juist: kaarten met waarde 6 moeten gedraaid worden.")
+        elif invoer3 == "nee":
+            print("Fout: kaarten met waarde 6 moeten gedraaid worden.")
+    elif invoer2 == "7":
+        if invoer3 == "ja":
+            print("Fout: kaarten met waarde 7 moeten niet gedraaid worden.")
+        elif invoer3 == "nee":
+            print("Juist: kaarten met waarde 7 moeten niet gedraaid worden.")
+    elif invoer2 == "8":
+        if invoer3 == "ja":
+            print("Juist: kaarten met waarde 8 moeten gedraaid worden.")          #juist volgens dodona
+        elif invoer3 == "nee":
+            print("Fout: kaarten met waarde 8 moeten gedraaid worden.")
+#waarde9 en 10 erbij
+    elif invoer2 == "9":
+        if invoer3 == "ja":
+            print("Fout: kaarten met waarde 9 moeten niet gedraaid worden.")
+        elif invoer3 == "nee":
+            print("Juist: kaarten met waarde 9 moeten niet gedraaid worden.")
+    elif invoer2 == "10":
+        if invoer3 == "ja":
+            print("Juist: kaarten met waarde 10 moeten gedraaid worden.")          #juist volgens dodona
+        elif invoer3 == "nee":
+            print("Fout: kaarten met waarde 10 moeten gedraaid worden.")

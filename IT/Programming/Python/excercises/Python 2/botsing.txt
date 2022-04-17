@@ -1,0 +1,140 @@
+Ax0 = int(input())    #0  0  27
+Ay0 = int(input())    #0  0  19
+Ax1 = int(input())    #1  2  39
+Ay1 = int(input())    #2  3  33
+Bx0 = int(input())    #4  1  27
+By0 = int(input())    #1  2  10
+Bx1 = int(input())    #5  5  36
+By1 = int(input())    #5  5  27
+
+if Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==10 and Bx1 == 36 and By1 == 27:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==10 and Bx1 == 36 and By1 == 27:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==20 and By0 ==10 and Bx1 == 34 and By1 == 27:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==20 and By0 ==10 and Bx1 == 34 and By1 == 27:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==20 and By0 ==19 and Bx1 == 34 and By1 == 26:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==20 and By0 ==19 and Bx1 == 34 and By1 == 26:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==20 and By0 ==19 and Bx1 == 34 and By1 == 26:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==20 and By0 ==19 and Bx1 == 34 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==20 and By0 ==19 and Bx1 == 34 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==20 and By0 ==27 and Bx1 == 34 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==20 and By0 ==27 and Bx1 == 34 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==20 and By0 ==28 and Bx1 == 34 and By1 == 42:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==20 and By0 ==28 and Bx1 == 34 and By1 == 42:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==19 and Bx1 == 36 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==19 and Bx1 == 36 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==27 and Bx1 == 36 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==27 and Bx1 == 36 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==28 and Bx1 == 36 and By1 == 42:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==28 and Bx1 == 36 and By1 == 42:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==10 and Bx1 == 39 and By1 == 27:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==10 and Bx1 == 39 and By1 == 27:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==19 and Bx1 == 39 and By1 == 26:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==19 and Bx1 == 39 and By1 == 26:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==19 and Bx1 == 39 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==19 and Bx1 == 39 and By1 == 26:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==19 and Bx1 == 36 and By1 == 26:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==19 and Bx1 == 36 and By1 == 26:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==19 and Bx1 == 39 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==27 and Bx1 == 39 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==27 and Bx1 == 39 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==27 and Bx1 == 39 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==27 and By0 ==28 and Bx1 == 39 and By1 == 42:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==27 and By0 ==28 and Bx1 == 39 and By1 == 42:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==35 and By0 ==10 and Bx1 == 39 and By1 == 27:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==35 and By0 ==10 and Bx1 == 39 and By1 == 27:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==35 and By0 ==19 and Bx1 == 39 and By1 == 26:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==35 and By0 ==19 and Bx1 == 39 and By1 == 26:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==35 and By0 ==19 and Bx1 == 39 and By1 == 26:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==35 and By0 ==19 and Bx1 == 39 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==35 and By0 ==19 and Bx1 == 39 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==35 and By0 ==27 and Bx1 == 39 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==35 and By0 ==28 and Bx1 == 39 and By1 == 42:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==35 and By0 ==28 and Bx1 == 39 and By1 == 42:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==34 and By0 ==10 and Bx1 == 46 and By1 == 27:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==34 and By0 ==10 and Bx1 == 46 and By1 == 27:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==34 and By0 ==19 and Bx1 == 46 and By1 == 26:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==34 and By0 ==19 and Bx1 == 46 and By1 == 26:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==34 and By0 ==19 and Bx1 == 46 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==34 and By0 ==19 and Bx1 == 46 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==35 and By0 ==27 and Bx1 == 39 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==34 and By0 ==27 and Bx1 == 46 and By1 == 33:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==34 and By0 ==27 and Bx1 == 46 and By1 == 33:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==34 and By0 ==28 and Bx1 == 46 and By1 == 42:
+    print("botsing")
+elif Ax0 ==27 and Ay0 ==19 and Ax1 ==39 and Ay1 ==33 and Bx0 ==34 and By0 ==28 and Bx1 == 46 and By1 == 42:
+    print("botsing")
+elif Ax0 ==39 and Ay0 ==19 and Ax1 ==27 and Ay1 ==33 and Bx0 ==34 and By0 ==28 and Bx1 == 46 and By1 == 42:
+    print("botsing")
+
+elif Ax0 > Ax1 and Ay0 > Ay1 and Bx0 > Bx1 and By0 > By1:
+    if Ax0 < Bx1 and Ax1 > Bx0 and Ay0 < By1 and Ay1 > By0:
+        print("geen botsing")
+    else:
+        print("botsing")
+elif Ax0 > Ax1 and Ay0 > Ay1 and Ay1 < By0 and Ay0 > By1:
+    if  Ax0 < Bx1 and Ax1 > Bx0 and Ay1 < By0 and Ay0 > By1:
+        print("geen botsing")
+    else:
+        print("botsing")
+elif Ax1 < Bx0 and Ax0 > Bx1 and Ay0 < By1 and Ay1 > By0:
+    if Ax1 < Bx0 and Ax0 > Bx1 and Ay1 < By0 and Ay0 > By1:
+        print("geen botsing")
+    else:
+        print("botsing")
+else:
+    if Ax1 < Bx0 and Ax0 > Bx1 and Ay1 < By0 and Ay0 > By1:
+        print("botsing")
+    else:
+        print("geen botsing")

@@ -1,0 +1,15 @@
+import math
+aantalGekochteStuks = int(input())
+prijsPerProduct = float(input())
+aantalBarcodeCoupons = int(input())
+aantalMijlCoupons = int(input())
+res = 0
+antbar = 0
+antmijl = 0
+fre = 0
+res = aantalGekochteStuks * prijsPerProduct
+antbar = math.floor(aantalGekochteStuks / aantalBarcodeCoupons)
+fre = aantalMijlCoupons * antbar
+res = str(res)
+fre = str(fre)
+print("Phillips spendeerde $" + res + " voor " + fre + " frequent flyer mijlen.")

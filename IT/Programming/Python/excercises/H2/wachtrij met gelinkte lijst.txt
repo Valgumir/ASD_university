@@ -1,0 +1,55 @@
+class QueueList:
+    class Knoop:
+        def __init__(self, data=None, volgende=None):
+            self.data = data
+            self.volgende = volgende
+
+    def __init__(self):
+        self.kop =None
+        self.staart = None
+    def empty(self):
+        return self.staart is None
+    def enqueue(self,data):
+        hulp = QueueList.Knoop(data)
+        if self.empty():
+            self.kop = hulp
+            self.staart = hulp
+        else:
+            self.staart.volgende = hulp
+            self.staart = hulp
+        pass
+    def front(self):
+        if self.empty():
+            ValueError("Front op lege queue")
+        return self.kop.data
+
+    def dequeue(self):
+        if self.empty():
+            ValueError("Dequeue op lege queue")
+        data = self.kop.data
+        self.kop = self.kop.volgende
+        if self.kop = None:
+            self.staart = None
+        return data
+
+    def invert(self):
+        vorige = None
+        huidige = self.kop
+        while not huidige is None:
+            volgende = huidige.volgende
+            huidige.volgende = vorige
+            vorige = huidige
+            huidige = volgende
+        self.kop.self.staart = self.staart.self.kop
+        #oudekop = self.kop
+        #self.kop = self.staart
+        #self.staart = oudekop
+
+    def __str__(self):
+        ref = self.kop
+        elems = []
+        while not ref is None:
+            elems.append(ref.data)
+            ref = ref.volgende
+        return "[" + ",".join(str(x) for x in elems) + "]"
+

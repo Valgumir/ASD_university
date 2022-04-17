@@ -1,0 +1,27 @@
+#invoer
+invoer1 = str(input())
+invoer2 = str(input())
+#groep3 is vals
+if invoer1 == "evenwicht":
+    if invoer2 == "evenwicht":      #munt9 is vals
+        print("muntstuk #9 is vervalst")
+    elif invoer2 == "links":        #munt8 is vals
+        print("muntstuk #8 is vervalst")
+    elif invoer2 == "rechts":       #munt7 is vals
+        print("muntstuk #7 is vervalst")
+#groep2 is vals
+elif invoer1 == "links":
+    if invoer2 == "evenwicht":      #munt6 is vals
+        print("muntstuk #6 is vervalst")
+    elif invoer2 == "links":        #munt5 is vals
+        print("muntstuk #5 is vervalst")
+    elif invoer2 == "rechts":       #munt4 is vals
+        print("muntstuk #4 is vervalst")
+#groep1 is vals
+elif invoer1 == "rechts":
+    if invoer2 == "evenwicht":      #munt3 is vals
+        print("muntstuk #3 is vervalst")
+    elif invoer2 == "links":        #munt2 is vals
+        print("muntstuk #2 is vervalst")
+    elif invoer2 == "rechts":       #munt1 is vals
+        print("muntstuk #1 is vervalst")

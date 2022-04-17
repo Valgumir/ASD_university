@@ -1,0 +1,55 @@
+from datetime import date, datetime, time, timedelta
+#gebruik extra functies zoals op volgende websites beschreven is: https://docs.python.org/3/library/datetime.html + https://www.programiz.com/python-programming/datetime
+#invoer
+starttijd = time(int(input()), int(input()))
+eindtijd = time(int(input()), int(input()))
+#tarief per uur omzetten naar tarief per minuut
+tarief1PerMinuut = float(2 / 60)
+tarief2PerMinuut = float(4 / 60)
+totaleKost = 0
+#check voorwaarden
+if starttijd < time(18,0,0):
+    print("ongeldige invoer")
+    exit()
+if eindtijd < time(18,0,0) and eindtijd != time(0,0,0):
+    print("ongeldige invoer")
+    exit()
+if eindtijd < starttijd:
+    print("ongeldige invoer")
+    exit()
+if starttijd >= time(18,0,0,):
+    if eindtijd <= time(21,30,0):
+        totaalVerschil = datetime.combine(date.today(), eindtijd) - datetime.combine(date.today(), starttijd)
+        totaalMinuten = totaalVerschil.total_seconds() / 60
+        KleineKost = tarief1PerMinuut * totaalMinuten
+        totaleKost += KleineKost
+#tarief2 van 21:31 tem 00:00
+    if eindtijd >= time(21,31,0):
+        if starttijd >= time(18,0,0) and starttijd <= time(21,30,0):
+            #tarief1 van 2 euro per uur binnen deze voorwaarden
+            tarief1Minuten = datetime.combine(date.today(), time(21,30,0)) - datetime.combine(date.today(), starttijd)
+            tarief1Minuten2 = tarief1Minuten.total_seconds() / 60
+            KleineKost = tarief1Minuten2 * tarief1PerMinuut
+            totaleKost += KleineKost
+            #tarief2 van 2 euro per uur binnen deze voorwaarden
+            tarief2Minuten = datetime.combine(date.today(), eindtijd) - datetime.combine(date.today(), time(21,30,0))
+            tarief2Minuten2 = tarief2Minuten.total_seconds() / 60
+            GroteKost = tarief2Minuten2 * tarief2PerMinuut
+            totaleKost += GroteKost
+            #bepalen of de tijd exact 00:00:00 is
+            if eindtijd == time(0,0,0):
+                tarief1Minuten = datetime.combine(date.today(), time(21,30,0)) - datetime.combine(date.today(), starttijd)
+                tarief1Minuten2 = tarief1Minuten.total_seconds() / 60
+                KleineKost = tarief1Minuten2 * tarief1PerMinuut
+                totaleKost += KleineKost
+                tarief2Minuten = datetime.combine(date.today(), time(23,59,0)) - datetime.combine(date.today(), time(21,31,0))
+                tarief2Minuten2 = (tarief2Minuten.total_seconds() / 60) + 1
+                GroteKost = tarief2Minuten2 * tarief2PerMinuut
+                totaleKost += GroteKost
+                #bepalen loon als starttijd aan de voorwaarden voldoet van tarief2
+        if starttijd >= time(21,31,0):
+            tarief2Minuten = datetime.combine(date.today(), eindtijd) - datetime.combine(date.today(), starttijd)
+            tarief2Minuten2 = tarief2Minuten.total_seconds() / 60
+            GroteKost = tarief2Minuten2 * tarief2PerMinuut
+            totaleKost += GroteKost
+print(totaleKost)

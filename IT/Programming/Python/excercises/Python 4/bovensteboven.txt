@@ -1,0 +1,24 @@
+def bovensteboven(get1):
+    get1 = str(get1)
+    dic1 = {'0': '0', '1': '1', '6': '9', '8': '8', '9': '6'}
+    links, rechts = 0, len(get1) - 1
+    while rechts >= links:
+        if (get1[links] not in dic1):
+            return False
+        elif (dic1[get1[links]] != get1[rechts]):
+            return False
+        else:
+            links = links + 1
+            rechts = rechts - 1
+    return True
+
+def volgende(get1):
+    get1 = int(get1)
+    volgend_get1 = get1 + 1
+    volgend_get1 = str(volgend_get1)
+    while bovensteboven(volgend_get1) != 1:
+        volgend_get1 = int(volgend_get1)
+        volgend_get1 = volgend_get1 + 1
+        volgend_get1 = str(volgend_get1)
+    volgend_get1 = int(volgend_get1)
+    return volgend_get1

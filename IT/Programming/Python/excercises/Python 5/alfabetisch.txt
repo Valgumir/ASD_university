@@ -1,0 +1,6 @@
+def alfabetisch(string):
+    #for woord in string:
+    string = string.split(" ")
+    string.sort()
+    str1 = " "
+    return (str1.join(string))

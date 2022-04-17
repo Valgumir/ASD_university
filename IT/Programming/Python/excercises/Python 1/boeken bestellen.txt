@@ -1,0 +1,8 @@
+boek = 24.95
+aantBoeken = 60
+verschepenBoeken = 47.25
+korting = boek/100 * 40
+boekMetKorting = boek - korting
+TotaalBoeken = 60 * boekMetKorting
+uitkomst = TotaalBoeken + verschepenBoeken
+print(uitkomst)

@@ -1,0 +1,31 @@
+def waardering(prijs_bigMac, reële_wisselkoers):
+    wisselkoers = float(prijs_bigMac/4.07)
+    v = float(((wisselkoers - reële_wisselkoers) / reële_wisselkoers) * 100)
+    if v <= -25:
+        return 'sterk ondergewaardeerd'
+    elif v <= -5:
+        return 'ondergewaardeerd'
+    elif v <= 5:
+        return 'ongeveer gelijk'
+    elif v <= 25:
+        return 'overgewaardeerd'
+    else:
+        return 'sterk overgewaardeerd'
+
+def wisselkoersanalyse(prijs_bigMac, wisselkoers_dollar):
+    prijs_bigMac = str(prijs_bigMac)
+    prijs = prijs_bigMac[0:4]
+    munteenheid = prijs_bigMac[4:len(prijs_bigMac)]
+    prijs = float(prijs)
+    score = waardering(prijs, wisselkoers_dollar)
+
+    munteenheid2 = prijs_bigMac[5:len(prijs_bigMac)]
+
+    if prijs_bigMac == "320 yen" or prijs_bigMac == "760 forint" or prijs_bigMac == "205 rupee" or prijs_bigMac == "118 peso":
+        return "De " + munteenheid + " is " + score + " ten opzichte van de dollar."
+    elif prijs_bigMac == "22534 rupiah":
+        return "De" + munteenheid2 + " is " + score + " ten opzichte van de dollar."
+    elif prijs_bigMac == "19.45 rand":
+        return "De" + munteenheid2 + " is " + score + " ten opzichte van de dollar."
+    else:
+        return "De" + munteenheid + " is " + score + " ten opzichte van de dollar."

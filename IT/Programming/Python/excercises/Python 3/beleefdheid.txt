@@ -1,0 +1,12 @@
+get1 = int(input()) #15
+amount = 0
+
+for get2 in range(1, get1 // 2 + 1):
+    get3 = get2
+    som = 0
+    while (som < get1):
+        som = som + get3
+        get3 = get3 + 1
+    if som == get1:
+        amount = amount + 1
+print(amount)

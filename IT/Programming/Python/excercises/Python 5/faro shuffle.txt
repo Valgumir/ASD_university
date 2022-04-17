@@ -1,0 +1,40 @@
+def nieuw_kaartspel(kleuren: list, waarden: list):
+#convert input to list -> https://stackoverflow.com/questions/35582959/how-do-i-convert-user-input-into-a-list/35582986
+    result = []
+    result = list(result)
+    #https://stackoverflow.com/questions/1198777/double-iteration-in-list-comprehension -> uitleg hoe je een dubbele iteratie in een lijst steekt
+    result = [a + b for a in kleuren for b in waarden]
+    LengteInvoer = len(waarden)
+    if LengteInvoer < 0 and LengteInvoer > 12:
+        error = "error"
+    return result
+def splits_kaartspel(invoer):
+    splitsing = len(invoer) // 2
+    res1 = []
+    res1 = invoer[:splitsing]
+    LengteInvoer = len(invoer)
+    res2 = []
+    res2 = invoer[splitsing:]
+    if invoer != 9999 and LengteInvoer > 0 and LengteInvoer < 999:
+        return res1, res2
+#https://gist.github.com/cyb0/f465396a4e9894310577
+#gebruik code om te shuffelen
+def faro_shuffle(lijst1, lijst2):
+    Lijst = []
+    LengteLijst1 = len(lijst1)
+    LengteLijst2 = len(lijst2)
+    for a in range(LengteLijst1):
+        if LengteLijst1 < 0 and LengteLijst2 < 0:
+            break
+        Lijst.append(lijst1[a])
+        if LengteLijst2 > 9999 or LengteLijst1 > 9999:
+            break
+        if LengteLijst1 == 0 and LengteLijst2 == 0:
+            break
+        Lijst.append(lijst2[a])
+        if lijst1 == 0 and lijst2 == 0:
+            break
+    if LengteLijst1 < LengteLijst2:
+        berekening1 = LengteLijst2 - 1
+        Lijst.append(lijst2[berekening1])
+    return Lijst

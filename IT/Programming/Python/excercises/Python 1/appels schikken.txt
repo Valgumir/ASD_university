@@ -1,0 +1,8 @@
+import math
+appelen = int(input("Hoeveel appelen: "))
+palletten = (appelen / 20) / 35
+palletten = math.floor(palletten)
+kisten = (appelen - (palletten * 700)) / 20
+kisten = math.floor(kisten)
+rest = (appelen - (palletten * 700)) - (kisten * 20)
+print("{}\n{}\n{}".format(palletten,kisten,rest))

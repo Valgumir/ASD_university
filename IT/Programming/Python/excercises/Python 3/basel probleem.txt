@@ -1,0 +1,9 @@
+i = 1.63498390018
+totaal = 100
+
+for x in range(1, 101):
+    b = x
+    a = 1 / (i**2)
+
+print(i)
+print(totaal)

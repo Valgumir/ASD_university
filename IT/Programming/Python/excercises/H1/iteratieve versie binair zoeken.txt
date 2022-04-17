@@ -1,0 +1,16 @@
+def zoekBinair(a,zoekItem):
+    n = len(a)
+    l = 0
+    r = n-1
+    while l != r:
+        print(f"{l}, {r}")
+        m = (l+r)//2
+        if a[m] < zoekItem :
+            l = m+1
+        else :
+            r=m
+    if a[l] == zoekItem:
+        index = l
+    else :
+        index = -1
+    return index

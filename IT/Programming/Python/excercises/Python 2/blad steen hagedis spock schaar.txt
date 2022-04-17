@@ -1,0 +1,66 @@
+speler1 = str(input(""))	#Spock
+speler2 = str(input(""))	#blad
+#cases gelijkspel
+if speler2 == "schaar" and speler1 == "schaar":   
+    print("gelijkspel")                       
+elif speler2 == "schaar" and speler1 == "schaar":
+    print("gelijkspel")
+elif speler2 == "blad" and speler1 == "blad":
+    print("gelijkspel")
+elif speler2 == "blad" and speler1 == "blad":
+    print("gelijkspel")
+elif speler2 == "steen" and speler1 == "steen":
+    print("gelijkspel")
+elif speler2 == "steen" and speler1 == "steen":
+    print("gelijkspel")
+elif speler2 == "hagedis" and speler1 == "hagedis":
+    print("gelijkspel")
+elif speler2 == "hagedis" and speler1 == "hagedis":
+    print("gelijkspel")
+elif speler2 == "Spock" and speler1 == "Spock":
+    print("gelijkspel")
+elif speler2 == "Spock" and speler1 == "Spock":
+    print("gelijkspel")
+else:
+    #cases speler1 wint
+    if speler1 == "schaar" and speler2 == "blad":   
+        print("speler1 wint")                       
+    elif speler1 == "schaar" and speler2 == "hagedis":
+        print("speler1 wint")
+    elif speler1 == "blad" and speler2 == "steen":
+        print("speler1 wint")
+    elif speler1 == "blad" and speler2 == "Spock":
+        print("speler1 wint")
+    elif speler1 == "steen" and speler2 == "hagedis":
+        print("speler1 wint")
+    elif speler1 == "steen" and speler2 == "schaar":
+        print("speler1 wint")
+    elif speler1 == "hagedis" and speler2 == "Spock":
+        print("speler1 wint")
+    elif speler1 == "hagedis" and speler2 == "blad":
+        print("speler1 wint")
+    elif speler1 == "Spock" and speler2 == "schaar":
+        print("speler1 wint")
+    elif speler1 == "Spock" and speler2 == "steen":
+        print("speler1 wint")
+    #cases speler2 wint
+    if speler2 == "schaar" and speler1 == "blad":   
+        print("speler2 wint")                       
+    elif speler2 == "schaar" and speler1 == "hagedis":
+        print("speler2 wint")
+    elif speler2 == "blad" and speler1 == "steen":
+        print("speler2 wint")
+    elif speler2 == "blad" and speler1 == "Spock":
+        print("speler2 wint")
+    elif speler2 == "steen" and speler1 == "hagedis":
+        print("speler2 wint")
+    elif speler2 == "steen" and speler1 == "schaar":
+        print("speler2 wint")
+    elif speler2 == "hagedis" and speler1 == "Spock":
+        print("speler2 wint")
+    elif speler2 == "hagedis" and speler1 == "blad":
+        print("speler2 wint")
+    elif speler2 == "Spock" and speler1 == "schaar":
+        print("speler2 wint")
+    elif speler2 == "Spock" and speler1 == "steen":
+        print("speler2 wint")

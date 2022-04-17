@@ -1,0 +1,712 @@
+import math
+aantalPiraten	 = int(input())	                                                                                    
+aantalKokosnoten = int(input())	                                                                                    
+aantalKokosnotenPerPiraat = 0
+restKokosnoten = 0
+aantalKokosnotenPerPiraat2 = 0
+aantalKokosnotenPerPiraat2_2 = 0
+restKokosnoten2 = 0
+aantalKokosnotenPerPiraat3 = 0
+aantalKokosnotenPerPiraat3_3 = 0
+restKokosnoten3 = 0
+aantalKokosnotenPerPiraat4 = 0
+aantalKokosnotenPerPiraat4_4 = 0
+restKokosnoten4 = 0
+aantalKokosnotenPerPiraat5 = 0
+aantalKokosnotenPerPiraat5_5 = 0
+restKokosnoten5 = 0
+aantalKokosnotenPerPiraat6 = 0
+aantalKokosnotenPerPiraat6_6 = 0
+restKokosnoten6 = 0
+aantalKokosnotenPerPiraat7 = 0
+aantalKokosnotenPerPiraat7_7 = 0
+restKokosnoten7 = 0
+aantalKokosnotenPerPiraat8 = 0
+aantalKokosnotenPerPiraat8_8 = 0
+restKokosnoten8 = 0
+aantalKokosnotenPerPiraat9 = 0
+aantalKokosnotenPerPiraat9_9 = 0
+restKokosnoten9 = 0
+aantalKokosnotenPerPiraat1_1 = 0
+aantalKokosnotenPerPiraat1_1_1 = 0
+restKokosnoten1_1 = 0
+aantalKokosnotenPerPiraat2_1 = 0
+aantalKokosnotenPerPiraat2_2_1 = 0
+restKokosnoten2_1 = 0
+aantalKokosnotenPerPiraat3_1 = 0
+aantalKokosnotenPerPiraat3_3_1 = 0
+restKokosnoten3_1 = 0
+aantalKokosnotenPerPiraat4_1 = 0
+aantalKokosnotenPerPiraat4_4_1 = 0
+restKokosnoten4_1 = 0
+aantalKokosnotenPerPiraat5_1 = 0
+aantalKokosnotenPerPiraat5_5_1 = 0
+restKokosnoten5_1 = 0
+aantalKokosnotenPerPiraat6_1 = 0
+aantalKokosnotenPerPiraat6_6_1 = 0
+restKokosnoten6_1 = 0
+aantalKokosnotenPerPiraat7_1 = 0
+aantalKokosnotenPerPiraat7_7_1 = 0
+restKokosnoten7_1 = 0
+aantalKokosnotenPerPiraat8_1 = 0
+aantalKokosnotenPerPiraat8_8_1 = 0
+restKokosnoten8_1 = 0
+aantalKokosnotenPerPiraat9_1 = 0
+aantalKokosnotenPerPiraat9_9_1 = 0
+restKokosnoten9_1 = 0
+if aantalPiraten == 1:
+    aantalKokosnotenPerPiraat = aantalKokosnoten // aantalPiraten                                             
+    restKokosnoten = aantalKokosnoten  % aantalPiraten                                                              
+    aantalKokosnotenPerPiraat1_1 = aantalKokosnoten - aantalKokosnotenPerPiraat - restKokosnoten               
+    aantalKokosnotenPerPiraat1_1_1 = aantalKokosnotenPerPiraat1_1 // aantalPiraten                           
+    restKokosnoten1_1 = aantalKokosnotenPerPiraat1_1 % aantalPiraten                                                    
+    aantalKokosnoten = str(aantalKokosnoten)
+    aantalKokosnotenPerPiraat = str(aantalKokosnotenPerPiraat)
+    restKokosnoten = str(restKokosnoten)
+    aantalKokosnotenPerPiraat1_1 = str(aantalKokosnotenPerPiraat1_1)
+    aantalKokosnotenPerPiraat1_1_1 = str(aantalKokosnotenPerPiraat1_1_1)
+    restKokosnoten1_1 = str(restKokosnoten1_1)
+    if restKokosnoten == "0":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en geen noten voor de aap")
+    elif restKokosnoten == "1":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noot voor de aap")
+    else:
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noten voor de aap")
+    if restKokosnoten1_1 == "0":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat1_1 + " noten en geen noten voor de aap")
+    elif restKokosnoten1_1 == "1":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat1_1 + " noten en " + restKokosnoten1_1 +" noot voor de aap")
+    else:
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat1_1 + " noten en " + restKokosnoten1_1 + " noten voor de aap")
+elif aantalPiraten == 2:
+    aantalKokosnotenPerPiraat = aantalKokosnoten // aantalPiraten                                             
+    restKokosnoten = aantalKokosnoten  % aantalPiraten                                                              
+    aantalKokosnotenPerPiraat2 = aantalKokosnoten - aantalKokosnotenPerPiraat - restKokosnoten              
+    aantalKokosnotenPerPiraat2_2 = aantalKokosnotenPerPiraat2 // aantalPiraten                           
+    restKokosnoten2 = aantalKokosnotenPerPiraat2 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat2_1 = aantalKokosnotenPerPiraat2-aantalKokosnotenPerPiraat2_2-restKokosnoten2   
+    aantalKokosnotenPerPiraat2_2_1 = aantalKokosnotenPerPiraat2_1 // aantalPiraten                       
+    restKokosnoten2_1 = aantalKokosnotenPerPiraat2_1 % aantalPiraten                                                
+    aantalKokosnoten = str(aantalKokosnoten)
+    aantalKokosnotenPerPiraat = str(aantalKokosnotenPerPiraat)
+    restKokosnoten = str(restKokosnoten)
+    aantalKokosnotenPerPiraat2 = str(aantalKokosnotenPerPiraat2)
+    aantalKokosnotenPerPiraat2_2 = str(aantalKokosnotenPerPiraat2_2)
+    restKokosnoten2 = str(restKokosnoten2)
+    aantalKokosnotenPerPiraat2_1 = str(aantalKokosnotenPerPiraat2_1)
+    aantalKokosnotenPerPiraat2_2_1 = str(aantalKokosnotenPerPiraat2_2_1)
+    restKokosnoten2_1 = str(restKokosnoten2_1)
+    if restKokosnoten == "0":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en geen noten voor de aap")
+    elif restKokosnoten == "1":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noot voor de aap")
+    else:
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noten voor de aap")
+    if restKokosnoten2 == "0":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en geen noten voor de aap")
+    elif restKokosnoten2 == "1":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noten voor de aap")
+    if restKokosnoten2_1 == "0":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat2_2_1 + " noten en geen noten voor de aap")
+    elif restKokosnoten2_1 == "1":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat2_2_1 + " noten en " + restKokosnoten2_1 +" noot voor de aap")
+    else:
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat2_2_1 + " noten en " + restKokosnoten2_1 + " noten voor de aap")
+elif aantalPiraten == 3:
+    aantalKokosnotenPerPiraat = aantalKokosnoten // aantalPiraten                                             
+    restKokosnoten = aantalKokosnoten  % aantalPiraten                                                              
+    aantalKokosnotenPerPiraat2 = aantalKokosnoten - aantalKokosnotenPerPiraat - restKokosnoten              
+    aantalKokosnotenPerPiraat2_2 = aantalKokosnotenPerPiraat2 // aantalPiraten                           
+    restKokosnoten2 = aantalKokosnotenPerPiraat2 % aantalPiraten                                                   
+    aantalKokosnotenPerPiraat3 = aantalKokosnotenPerPiraat2 - aantalKokosnotenPerPiraat2_2 - restKokosnoten2
+    aantalKokosnotenPerPiraat3_3 = aantalKokosnotenPerPiraat3 // aantalPiraten                         
+    restKokosnoten3 = aantalKokosnotenPerPiraat3 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat3_1 = aantalKokosnotenPerPiraat3-aantalKokosnotenPerPiraat3_3-restKokosnoten3   
+    aantalKokosnotenPerPiraat3_3_1 = aantalKokosnotenPerPiraat3_1 // aantalPiraten                       
+    restKokosnoten3_1 = aantalKokosnotenPerPiraat3_1 % aantalPiraten                                                
+    aantalKokosnoten = str(aantalKokosnoten)
+    aantalKokosnotenPerPiraat = str(aantalKokosnotenPerPiraat)
+    restKokosnoten = str(restKokosnoten)
+    aantalKokosnotenPerPiraat2 = str(aantalKokosnotenPerPiraat2)
+    aantalKokosnotenPerPiraat2_2 = str(aantalKokosnotenPerPiraat2_2)
+    restKokosnoten2 = str(restKokosnoten2)
+    aantalKokosnotenPerPiraat3 = str(aantalKokosnotenPerPiraat3)
+    aantalKokosnotenPerPiraat3_3 = str(aantalKokosnotenPerPiraat3_3)
+    restKokosnoten3 = str(restKokosnoten3)
+    aantalKokosnotenPerPiraat3_1 = str(aantalKokosnotenPerPiraat3_1)
+    aantalKokosnotenPerPiraat3_3_1 = str(aantalKokosnotenPerPiraat3_3_1)
+    restKokosnoten3_1 = str(restKokosnoten3_1)
+    if restKokosnoten == "0":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en geen noten voor de aap")
+    elif restKokosnoten == "1":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noot voor de aap")
+    else:
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noten voor de aap")
+    if restKokosnoten2 == "0":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en geen noten voor de aap")
+    elif restKokosnoten2 == "1":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noten voor de aap")
+    if restKokosnoten3 == "0":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en geen noten voor de aap")
+    elif restKokosnoten3 == "1":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noten voor de aap")
+    if restKokosnoten3_1 == "0":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat3_3_1 + " noten en geen noten voor de aap")
+    elif restKokosnoten3_1 == "1":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat3_3_1 + " noten en " + restKokosnoten3_1 +" noot voor de aap")
+    else:
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat3_3_1 + " noten en " + restKokosnoten3_1 + " noten voor de aap")
+elif aantalPiraten == 4:
+    aantalKokosnotenPerPiraat = aantalKokosnoten // aantalPiraten                                             
+    restKokosnoten = aantalKokosnoten  % aantalPiraten                                                              
+    aantalKokosnotenPerPiraat2 = aantalKokosnoten - aantalKokosnotenPerPiraat - restKokosnoten              
+    aantalKokosnotenPerPiraat2_2 = aantalKokosnotenPerPiraat2 // aantalPiraten                           
+    restKokosnoten2 = aantalKokosnotenPerPiraat2 % aantalPiraten                                                   
+    aantalKokosnotenPerPiraat3 = aantalKokosnotenPerPiraat2 - aantalKokosnotenPerPiraat2_2 - restKokosnoten2
+    aantalKokosnotenPerPiraat3_3 = aantalKokosnotenPerPiraat3 // aantalPiraten                         
+    restKokosnoten3 = aantalKokosnotenPerPiraat3 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat4 = aantalKokosnotenPerPiraat3 - aantalKokosnotenPerPiraat3_3 - restKokosnoten3        
+    aantalKokosnotenPerPiraat4_4 = aantalKokosnotenPerPiraat4 // aantalPiraten                                  
+    restKokosnoten4 = aantalKokosnotenPerPiraat4 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat4_1 = aantalKokosnotenPerPiraat4-aantalKokosnotenPerPiraat4_4-restKokosnoten4
+    aantalKokosnotenPerPiraat4_4_1 = aantalKokosnotenPerPiraat4_1 // aantalPiraten
+    restKokosnoten4_1 = aantalKokosnotenPerPiraat4_1 % aantalPiraten
+    aantalKokosnoten = str(aantalKokosnoten)
+    aantalKokosnotenPerPiraat = str(aantalKokosnotenPerPiraat)
+    restKokosnoten = str(restKokosnoten)
+    aantalKokosnotenPerPiraat2 = str(aantalKokosnotenPerPiraat2)
+    aantalKokosnotenPerPiraat2_2 = str(aantalKokosnotenPerPiraat2_2)
+    restKokosnoten2 = str(restKokosnoten2)
+    aantalKokosnotenPerPiraat3 = str(aantalKokosnotenPerPiraat3)
+    aantalKokosnotenPerPiraat3_3 = str(aantalKokosnotenPerPiraat3_3)
+    restKokosnoten3 = str(restKokosnoten3)
+    aantalKokosnotenPerPiraat4 = str(aantalKokosnotenPerPiraat4)
+    aantalKokosnotenPerPiraat4_4 = str(aantalKokosnotenPerPiraat4_4)
+    restKokosnoten4 = str(restKokosnoten4)
+    aantalKokosnotenPerPiraat4_1 = str(aantalKokosnotenPerPiraat4_1)
+    aantalKokosnotenPerPiraat4_4_1 = str(aantalKokosnotenPerPiraat4_4_1)
+    restKokosnoten4_1 = str(restKokosnoten4_1)
+    if restKokosnoten == "0":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en geen noten voor de aap")
+    elif restKokosnoten == "1":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noot voor de aap")
+    else:
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noten voor de aap")
+    if restKokosnoten2 == "0":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en geen noten voor de aap")
+    elif restKokosnoten2 == "1":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noten voor de aap")
+    if restKokosnoten3 == "0":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en geen noten voor de aap")
+    elif restKokosnoten3 == "1":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noten voor de aap")
+    if restKokosnoten4 == "0":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en geen noten voor de aap")
+    elif restKokosnoten4 == "1":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noten voor de aap")
+    if restKokosnoten4_1 == "0":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat4_4_1 + " noten en geen noten voor de aap")
+    elif restKokosnoten4_1 == "1":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat4_4_1 + " noten en " + restKokosnoten4_1 +" noot voor de aap")
+    else:
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat4_4_1 + " noten en " + restKokosnoten4_1 + " noten voor de aap")
+elif aantalPiraten == 5:
+    aantalKokosnotenPerPiraat = aantalKokosnoten // aantalPiraten                                             
+    restKokosnoten = aantalKokosnoten  % aantalPiraten                                                              
+    aantalKokosnotenPerPiraat2 = aantalKokosnoten - aantalKokosnotenPerPiraat - restKokosnoten              
+    aantalKokosnotenPerPiraat2_2 = aantalKokosnotenPerPiraat2 // aantalPiraten                           
+    restKokosnoten2 = aantalKokosnotenPerPiraat2 % aantalPiraten                                                   
+    aantalKokosnotenPerPiraat3 = aantalKokosnotenPerPiraat2 - aantalKokosnotenPerPiraat2_2 - restKokosnoten2
+    aantalKokosnotenPerPiraat3_3 = aantalKokosnotenPerPiraat3 // aantalPiraten                         
+    restKokosnoten3 = aantalKokosnotenPerPiraat3 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat4 = aantalKokosnotenPerPiraat3 - aantalKokosnotenPerPiraat3_3 - restKokosnoten3        
+    aantalKokosnotenPerPiraat4_4 = aantalKokosnotenPerPiraat4 // aantalPiraten                                  
+    restKokosnoten4 = aantalKokosnotenPerPiraat4 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat5 = aantalKokosnotenPerPiraat4 - aantalKokosnotenPerPiraat4_4 - restKokosnoten4        
+    aantalKokosnotenPerPiraat5_5 = aantalKokosnotenPerPiraat5 // aantalPiraten                                  
+    restKokosnoten5 = aantalKokosnotenPerPiraat5 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat5_1 = aantalKokosnotenPerPiraat5-aantalKokosnotenPerPiraat5_5-restKokosnoten5
+    aantalKokosnotenPerPiraat5_5_1 = aantalKokosnotenPerPiraat5_1 // aantalPiraten
+    restKokosnoten5_1 = aantalKokosnotenPerPiraat5_1 % aantalPiraten
+    aantalKokosnoten = str(aantalKokosnoten)
+    aantalKokosnotenPerPiraat = str(aantalKokosnotenPerPiraat)
+    restKokosnoten = str(restKokosnoten)
+    aantalKokosnotenPerPiraat2 = str(aantalKokosnotenPerPiraat2)
+    aantalKokosnotenPerPiraat2_2 = str(aantalKokosnotenPerPiraat2_2)
+    restKokosnoten2 = str(restKokosnoten2)
+    aantalKokosnotenPerPiraat3 = str(aantalKokosnotenPerPiraat3)
+    aantalKokosnotenPerPiraat3_3 = str(aantalKokosnotenPerPiraat3_3)
+    restKokosnoten3 = str(restKokosnoten3)
+    aantalKokosnotenPerPiraat4 = str(aantalKokosnotenPerPiraat4)
+    aantalKokosnotenPerPiraat4_4 = str(aantalKokosnotenPerPiraat4_4)
+    restKokosnoten4 = str(restKokosnoten4)
+    aantalKokosnotenPerPiraat5 = str(aantalKokosnotenPerPiraat5)
+    aantalKokosnotenPerPiraat5_5 = str(aantalKokosnotenPerPiraat5_5)
+    restKokosnoten5 = str(restKokosnoten5)
+    aantalKokosnotenPerPiraat5_1 = str(aantalKokosnotenPerPiraat5_1)
+    aantalKokosnotenPerPiraat5_5_1 = str(aantalKokosnotenPerPiraat5_5_1)
+    restKokosnoten5_1 = str(restKokosnoten5_1)
+    if restKokosnoten == "0":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en geen noten voor de aap")
+    elif restKokosnoten == "1":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noot voor de aap")
+    else:
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noten voor de aap")
+    if restKokosnoten2 == "0":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en geen noten voor de aap")
+    elif restKokosnoten2 == "1":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noten voor de aap")
+    if restKokosnoten3 == "0":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en geen noten voor de aap")
+    elif restKokosnoten3 == "1":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noten voor de aap")
+    if restKokosnoten4 == "0":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en geen noten voor de aap")
+    elif restKokosnoten4 == "1":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noten voor de aap")
+    if restKokosnoten5 == "0":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en geen noten voor de aap")
+    elif restKokosnoten5 == "1":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noten voor de aap")
+    if restKokosnoten5_1 == "0":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat5_5_1 + " noten en geen noten voor de aap")
+    elif restKokosnoten5_1 == "1":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat5_5_1 + " noten en " + restKokosnoten5_1 +" noot voor de aap")
+    else:
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat5_5_1 + " noten en " + restKokosnoten5_1 + " noten voor de aap")
+elif aantalPiraten == 6:
+    aantalKokosnotenPerPiraat = aantalKokosnoten // aantalPiraten                                             
+    restKokosnoten = aantalKokosnoten  % aantalPiraten                                                              
+    aantalKokosnotenPerPiraat2 = aantalKokosnoten - aantalKokosnotenPerPiraat - restKokosnoten              
+    aantalKokosnotenPerPiraat2_2 = aantalKokosnotenPerPiraat2 // aantalPiraten                           
+    restKokosnoten2 = aantalKokosnotenPerPiraat2 % aantalPiraten                                                   
+    aantalKokosnotenPerPiraat3 = aantalKokosnotenPerPiraat2 - aantalKokosnotenPerPiraat2_2 - restKokosnoten2
+    aantalKokosnotenPerPiraat3_3 = aantalKokosnotenPerPiraat3 // aantalPiraten                         
+    restKokosnoten3 = aantalKokosnotenPerPiraat3 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat4 = aantalKokosnotenPerPiraat3 - aantalKokosnotenPerPiraat3_3 - restKokosnoten3        
+    aantalKokosnotenPerPiraat4_4 = aantalKokosnotenPerPiraat4 // aantalPiraten                                  
+    restKokosnoten4 = aantalKokosnotenPerPiraat4 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat5 = aantalKokosnotenPerPiraat4 - aantalKokosnotenPerPiraat4_4 - restKokosnoten4        
+    aantalKokosnotenPerPiraat5_5 = aantalKokosnotenPerPiraat5 // aantalPiraten                                  
+    restKokosnoten5 = aantalKokosnotenPerPiraat5 % aantalPiraten      
+    aantalKokosnotenPerPiraat6 = aantalKokosnotenPerPiraat5 - aantalKokosnotenPerPiraat5_5 - restKokosnoten5        
+    aantalKokosnotenPerPiraat6_6 = aantalKokosnotenPerPiraat6 // aantalPiraten                                  
+    restKokosnoten6 = aantalKokosnotenPerPiraat6 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat6_1 = aantalKokosnotenPerPiraat6 - aantalKokosnotenPerPiraat6_6 - restKokosnoten6        
+    aantalKokosnotenPerPiraat6_6_1 = aantalKokosnotenPerPiraat6_1 // aantalPiraten                                  
+    restKokosnoten6_1 = aantalKokosnotenPerPiraat6_1 % aantalPiraten   
+    aantalKokosnoten = str(aantalKokosnoten)
+    aantalKokosnotenPerPiraat = str(aantalKokosnotenPerPiraat)
+    restKokosnoten = str(restKokosnoten)
+    aantalKokosnotenPerPiraat2 = str(aantalKokosnotenPerPiraat2)
+    aantalKokosnotenPerPiraat2_2 = str(aantalKokosnotenPerPiraat2_2)
+    restKokosnoten2 = str(restKokosnoten2)
+    aantalKokosnotenPerPiraat3 = str(aantalKokosnotenPerPiraat3)
+    aantalKokosnotenPerPiraat3_3 = str(aantalKokosnotenPerPiraat3_3)
+    restKokosnoten3 = str(restKokosnoten3)
+    aantalKokosnotenPerPiraat4 = str(aantalKokosnotenPerPiraat4)
+    aantalKokosnotenPerPiraat4_4 = str(aantalKokosnotenPerPiraat4_4)
+    restKokosnoten4 = str(restKokosnoten4)
+    aantalKokosnotenPerPiraat5 = str(aantalKokosnotenPerPiraat5)
+    aantalKokosnotenPerPiraat5_5 = str(aantalKokosnotenPerPiraat5_5)
+    restKokosnoten5 = str(restKokosnoten5)
+    aantalKokosnotenPerPiraat6 = str(aantalKokosnotenPerPiraat6)
+    aantalKokosnotenPerPiraat6_6 = str(aantalKokosnotenPerPiraat6_6)
+    restKokosnoten6 = str(restKokosnoten6)
+    aantalKokosnotenPerPiraat6_1 = str(aantalKokosnotenPerPiraat6_1)
+    aantalKokosnotenPerPiraat6_6_1 = str(aantalKokosnotenPerPiraat6_6_1)
+    restKokosnoten6_1 = str(restKokosnoten6_1)
+    if restKokosnoten == "0":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en geen noten voor de aap")
+    elif restKokosnoten == "1":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noot voor de aap")
+    else:
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noten voor de aap")
+    if restKokosnoten2 == "0":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en geen noten voor de aap")
+    elif restKokosnoten2 == "1":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noten voor de aap")
+    if restKokosnoten3 == "0":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en geen noten voor de aap")
+    elif restKokosnoten3 == "1":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noten voor de aap")
+    if restKokosnoten4 == "0":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en geen noten voor de aap")
+    elif restKokosnoten4 == "1":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noten voor de aap")
+    if restKokosnoten5 == "0":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en geen noten voor de aap")
+    elif restKokosnoten5 == "1":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noten voor de aap")
+    if restKokosnoten6 == "0":
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en geen noten voor de aap")
+    elif restKokosnoten6 == "1":
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en " + restKokosnoten6 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en " + restKokosnoten6 +" noten voor de aap")
+    if restKokosnoten6_1 == "0":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat6_6_1 + " noten en geen noten voor de aap")
+    elif restKokosnoten6_1 == "1":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat6_6_1 + " noten en " + restKokosnoten6_1 +" noot voor de aap")
+    else:
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat6_6_1 + " noten en " + restKokosnoten6_1 + " noten voor de aap")
+elif aantalPiraten == 7:
+
+    aantalKokosnotenPerPiraat = aantalKokosnoten // aantalPiraten                                             
+    restKokosnoten = aantalKokosnoten  % aantalPiraten                                                              
+    aantalKokosnotenPerPiraat2 = aantalKokosnoten - aantalKokosnotenPerPiraat - restKokosnoten              
+    aantalKokosnotenPerPiraat2_2 = aantalKokosnotenPerPiraat2 // aantalPiraten                           
+    restKokosnoten2 = aantalKokosnotenPerPiraat2 % aantalPiraten                                                   
+    aantalKokosnotenPerPiraat3 = aantalKokosnotenPerPiraat2 - aantalKokosnotenPerPiraat2_2 - restKokosnoten2
+    aantalKokosnotenPerPiraat3_3 = aantalKokosnotenPerPiraat3 // aantalPiraten                         
+    restKokosnoten3 = aantalKokosnotenPerPiraat3 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat4 = aantalKokosnotenPerPiraat3 - aantalKokosnotenPerPiraat3_3 - restKokosnoten3        
+    aantalKokosnotenPerPiraat4_4 = aantalKokosnotenPerPiraat4 // aantalPiraten                                  
+    restKokosnoten4 = aantalKokosnotenPerPiraat4 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat5 = aantalKokosnotenPerPiraat4 - aantalKokosnotenPerPiraat4_4 - restKokosnoten4        
+    aantalKokosnotenPerPiraat5_5 = aantalKokosnotenPerPiraat5 // aantalPiraten                                  
+    restKokosnoten5 = aantalKokosnotenPerPiraat5 % aantalPiraten      
+    aantalKokosnotenPerPiraat6 = aantalKokosnotenPerPiraat5 - aantalKokosnotenPerPiraat5_5 - restKokosnoten5        
+    aantalKokosnotenPerPiraat6_6 = aantalKokosnotenPerPiraat6 // aantalPiraten                                  
+    restKokosnoten6 = aantalKokosnotenPerPiraat6 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat7 = aantalKokosnotenPerPiraat6 - aantalKokosnotenPerPiraat6_6 - restKokosnoten6        
+    aantalKokosnotenPerPiraat7_7 = aantalKokosnotenPerPiraat7 // aantalPiraten                                  
+    restKokosnoten7 = aantalKokosnotenPerPiraat7 % aantalPiraten  
+    aantalKokosnotenPerPiraat7_1 = aantalKokosnotenPerPiraat7-aantalKokosnotenPerPiraat7_7-restKokosnoten7
+    aantalKokosnotenPerPiraat7_7_1 = aantalKokosnotenPerPiraat7_1 // aantalPiraten
+    restKokosnoten7_1 = aantalKokosnotenPerPiraat7_1 % aantalPiraten
+
+    aantalKokosnoten = str(aantalKokosnoten)
+    aantalKokosnotenPerPiraat = str(aantalKokosnotenPerPiraat)
+    restKokosnoten = str(restKokosnoten)
+    aantalKokosnotenPerPiraat2 = str(aantalKokosnotenPerPiraat2)
+    aantalKokosnotenPerPiraat2_2 = str(aantalKokosnotenPerPiraat2_2)
+    restKokosnoten2 = str(restKokosnoten2)
+    aantalKokosnotenPerPiraat3 = str(aantalKokosnotenPerPiraat3)
+    aantalKokosnotenPerPiraat3_3 = str(aantalKokosnotenPerPiraat3_3)
+    restKokosnoten3 = str(restKokosnoten3)
+    aantalKokosnotenPerPiraat4 = str(aantalKokosnotenPerPiraat4)
+    aantalKokosnotenPerPiraat4_4 = str(aantalKokosnotenPerPiraat4_4)
+    restKokosnoten4 = str(restKokosnoten4)
+    aantalKokosnotenPerPiraat5 = str(aantalKokosnotenPerPiraat5)
+    aantalKokosnotenPerPiraat5_5 = str(aantalKokosnotenPerPiraat5_5)
+    restKokosnoten5 = str(restKokosnoten5)
+    aantalKokosnotenPerPiraat6 = str(aantalKokosnotenPerPiraat6)
+    aantalKokosnotenPerPiraat6_6 = str(aantalKokosnotenPerPiraat6_6)
+    restKokosnoten6 = str(restKokosnoten6)
+    aantalKokosnotenPerPiraat7 = str(aantalKokosnotenPerPiraat7)
+    aantalKokosnotenPerPiraat7_7 = str(aantalKokosnotenPerPiraat7_7)
+    restKokosnoten7 = str(restKokosnoten7)
+    aantalKokosnotenPerPiraat7_1 = str(aantalKokosnotenPerPiraat7_1)
+    aantalKokosnotenPerPiraat7_7_1 = str(aantalKokosnotenPerPiraat7_7_1)
+    restKokosnoten7_1 = str(restKokosnoten7_1)
+    if restKokosnoten == "0":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en geen noten voor de aap")
+    elif restKokosnoten == "1":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noot voor de aap")
+    else:
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noten voor de aap")
+    if restKokosnoten2 == "0":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en geen noten voor de aap")
+    elif restKokosnoten2 == "1":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noten voor de aap")
+    if restKokosnoten3 == "0":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en geen noten voor de aap")
+    elif restKokosnoten3 == "1":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noten voor de aap")
+    if restKokosnoten4 == "0":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en geen noten voor de aap")
+    elif restKokosnoten4 == "1":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noten voor de aap")
+    if restKokosnoten5 == "0":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en geen noten voor de aap")
+    elif restKokosnoten5 == "1":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noten voor de aap")
+    if restKokosnoten6 == "0":
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en geen noten voor de aap")
+    elif restKokosnoten6 == "1":
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en " + restKokosnoten6 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en " + restKokosnoten6 +" noten voor de aap")
+    if restKokosnoten7 == "0":
+        print(aantalKokosnotenPerPiraat7 + " noten = " + aantalKokosnotenPerPiraat7_7 + " noten voor piraat#7 en geen noten voor de aap")
+    elif restKokosnoten7 == "1":
+        print(aantalKokosnotenPerPiraat7 + " noten = " + aantalKokosnotenPerPiraat7_7 + " noten voor piraat#7 en " + restKokosnoten7 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat7 + " noten = " + aantalKokosnotenPerPiraat7_7 + " noten voor piraat#7 en " + restKokosnoten7 +" noten voor de aap")
+    if restKokosnoten7_1 == "0":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat7_7_1 + " noten en geen noten voor de aap")
+    elif restKokosnoten7_1 == "1":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat7_7_1 + " noten en " + restKokosnoten7_1 +" noot voor de aap")
+    else:
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat7_7_1 + " noten en " + restKokosnoten7_1 + " noten voor de aap")
+elif aantalPiraten == 8:
+
+    aantalKokosnotenPerPiraat = aantalKokosnoten // aantalPiraten                                             
+    restKokosnoten = aantalKokosnoten  % aantalPiraten                                                              
+    aantalKokosnotenPerPiraat2 = aantalKokosnoten - aantalKokosnotenPerPiraat - restKokosnoten              
+    aantalKokosnotenPerPiraat2_2 = aantalKokosnotenPerPiraat2 // aantalPiraten                           
+    restKokosnoten2 = aantalKokosnotenPerPiraat2 % aantalPiraten                                                   
+    aantalKokosnotenPerPiraat3 = aantalKokosnotenPerPiraat2 - aantalKokosnotenPerPiraat2_2 - restKokosnoten2
+    aantalKokosnotenPerPiraat3_3 = aantalKokosnotenPerPiraat3 // aantalPiraten                         
+    restKokosnoten3 = aantalKokosnotenPerPiraat3 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat4 = aantalKokosnotenPerPiraat3 - aantalKokosnotenPerPiraat3_3 - restKokosnoten3        
+    aantalKokosnotenPerPiraat4_4 = aantalKokosnotenPerPiraat4 // aantalPiraten                                  
+    restKokosnoten4 = aantalKokosnotenPerPiraat4 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat5 = aantalKokosnotenPerPiraat4 - aantalKokosnotenPerPiraat4_4 - restKokosnoten4        
+    aantalKokosnotenPerPiraat5_5 = aantalKokosnotenPerPiraat5 // aantalPiraten                                  
+    restKokosnoten5 = aantalKokosnotenPerPiraat5 % aantalPiraten      
+    aantalKokosnotenPerPiraat6 = aantalKokosnotenPerPiraat5 - aantalKokosnotenPerPiraat5_5 - restKokosnoten5        
+    aantalKokosnotenPerPiraat6_6 = aantalKokosnotenPerPiraat6 // aantalPiraten                                  
+    restKokosnoten6 = aantalKokosnotenPerPiraat6 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat7 = aantalKokosnotenPerPiraat6 - aantalKokosnotenPerPiraat6_6 - restKokosnoten6        
+    aantalKokosnotenPerPiraat7_7 = aantalKokosnotenPerPiraat7 // aantalPiraten                                  
+    restKokosnoten7 = aantalKokosnotenPerPiraat7 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat8 = aantalKokosnotenPerPiraat7 - aantalKokosnotenPerPiraat7_7 - restKokosnoten7        
+    aantalKokosnotenPerPiraat8_8 = aantalKokosnotenPerPiraat8 // aantalPiraten                                  
+    restKokosnoten8 = aantalKokosnotenPerPiraat8 % aantalPiraten
+    aantalKokosnotenPerPiraat8_1 = aantalKokosnotenPerPiraat8-aantalKokosnotenPerPiraat8_8-restKokosnoten8
+    aantalKokosnotenPerPiraat8_8_1 = aantalKokosnotenPerPiraat8_1 // aantalPiraten
+    restKokosnoten8_1 = aantalKokosnotenPerPiraat8_1 % aantalPiraten 
+
+    aantalKokosnoten = str(aantalKokosnoten)
+    aantalKokosnotenPerPiraat = str(aantalKokosnotenPerPiraat)
+    restKokosnoten = str(restKokosnoten)
+    aantalKokosnotenPerPiraat2 = str(aantalKokosnotenPerPiraat2)
+    aantalKokosnotenPerPiraat2_2 = str(aantalKokosnotenPerPiraat2_2)
+    restKokosnoten2 = str(restKokosnoten2)
+    aantalKokosnotenPerPiraat3 = str(aantalKokosnotenPerPiraat3)
+    aantalKokosnotenPerPiraat3_3 = str(aantalKokosnotenPerPiraat3_3)
+    restKokosnoten3 = str(restKokosnoten3)
+    aantalKokosnotenPerPiraat4 = str(aantalKokosnotenPerPiraat4)
+    aantalKokosnotenPerPiraat4_4 = str(aantalKokosnotenPerPiraat4_4)
+    restKokosnoten4 = str(restKokosnoten4)
+    aantalKokosnotenPerPiraat5 = str(aantalKokosnotenPerPiraat5)
+    aantalKokosnotenPerPiraat5_5 = str(aantalKokosnotenPerPiraat5_5)
+    restKokosnoten5 = str(restKokosnoten5)
+    aantalKokosnotenPerPiraat6 = str(aantalKokosnotenPerPiraat6)
+    aantalKokosnotenPerPiraat6_6 = str(aantalKokosnotenPerPiraat6_6)
+    restKokosnoten6 = str(restKokosnoten6)
+    aantalKokosnotenPerPiraat7 = str(aantalKokosnotenPerPiraat7)
+    aantalKokosnotenPerPiraat7_7 = str(aantalKokosnotenPerPiraat7_7)
+    restKokosnoten7 = str(restKokosnoten7)
+    aantalKokosnotenPerPiraat8 = str(aantalKokosnotenPerPiraat8)
+    aantalKokosnotenPerPiraat8_8 = str(aantalKokosnotenPerPiraat8_8)
+    restKokosnoten8 = str(restKokosnoten8)
+    aantalKokosnotenPerPiraat8_1 = str(aantalKokosnotenPerPiraat8_1)
+    aantalKokosnotenPerPiraat8_8_1 = str(aantalKokosnotenPerPiraat8_8_1)
+    restKokosnoten8_1 = str(restKokosnoten8_1)
+    if restKokosnoten == "0":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en geen noten voor de aap")
+    elif restKokosnoten == "1":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noot voor de aap")
+    else:
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noten voor de aap")
+    if restKokosnoten2 == "0":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en geen noten voor de aap")
+    elif restKokosnoten2 == "1":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noten voor de aap")
+    if restKokosnoten3 == "0":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en geen noten voor de aap")
+    elif restKokosnoten3 == "1":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noten voor de aap")
+    if restKokosnoten4 == "0":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en geen noten voor de aap")
+    elif restKokosnoten4 == "1":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noten voor de aap")
+    if restKokosnoten5 == "0":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en geen noten voor de aap")
+    elif restKokosnoten5 == "1":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noten voor de aap")
+    if restKokosnoten6 == "0":
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en geen noten voor de aap")
+    elif restKokosnoten6 == "1":
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en " + restKokosnoten6 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en " + restKokosnoten6 +" noten voor de aap")
+    if restKokosnoten7 == "0":
+        print(aantalKokosnotenPerPiraat7 + " noten = " + aantalKokosnotenPerPiraat7_7 + " noten voor piraat#7 en geen noten voor de aap")
+    elif restKokosnoten7 == "1":
+        print(aantalKokosnotenPerPiraat7 + " noten = " + aantalKokosnotenPerPiraat7_7 + " noten voor piraat#7 en " + restKokosnoten7 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat7 + " noten = " + aantalKokosnotenPerPiraat7_7 + " noten voor piraat#7 en " + restKokosnoten7 +" noten voor de aap")
+    if restKokosnoten8 == "0":
+        print(aantalKokosnotenPerPiraat8 + " noten = " + aantalKokosnotenPerPiraat8_8 + " noten voor piraat#8 en geen noten voor de aap")
+    elif restKokosnoten8 == "1":
+        print(aantalKokosnotenPerPiraat8 + " noten = " + aantalKokosnotenPerPiraat8_8 + " noten voor piraat#8 en " + restKokosnoten8 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat8 + " noten = " + aantalKokosnotenPerPiraat8_8 + " noten voor piraat#8 en " + restKokosnoten8 +" noten voor de aap")
+    if restKokosnoten8_1 == "0":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat8_8_1 + " noten en geen noten voor de aap")
+    elif restKokosnoten8_1 == "1":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat8_8_1 + " noten en " + restKokosnoten8_1 +" noot voor de aap")
+    else:
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat8_8_1 + " noten en " + restKokosnoten8_1 + " noten voor de aap")
+elif aantalPiraten == 9:
+
+    aantalKokosnotenPerPiraat = aantalKokosnoten // aantalPiraten                                             
+    restKokosnoten = aantalKokosnoten  % aantalPiraten                                                              
+    aantalKokosnotenPerPiraat2 = aantalKokosnoten - aantalKokosnotenPerPiraat - restKokosnoten              
+    aantalKokosnotenPerPiraat2_2 = aantalKokosnotenPerPiraat2 // aantalPiraten                           
+    restKokosnoten2 = aantalKokosnotenPerPiraat2 % aantalPiraten                                                   
+    aantalKokosnotenPerPiraat3 = aantalKokosnotenPerPiraat2 - aantalKokosnotenPerPiraat2_2 - restKokosnoten2
+    aantalKokosnotenPerPiraat3_3 = aantalKokosnotenPerPiraat3 // aantalPiraten                         
+    restKokosnoten3 = aantalKokosnotenPerPiraat3 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat4 = aantalKokosnotenPerPiraat3 - aantalKokosnotenPerPiraat3_3 - restKokosnoten3        
+    aantalKokosnotenPerPiraat4_4 = aantalKokosnotenPerPiraat4 // aantalPiraten                                  
+    restKokosnoten4 = aantalKokosnotenPerPiraat4 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat5 = aantalKokosnotenPerPiraat4 - aantalKokosnotenPerPiraat4_4 - restKokosnoten4        
+    aantalKokosnotenPerPiraat5_5 = aantalKokosnotenPerPiraat5 // aantalPiraten                                  
+    restKokosnoten5 = aantalKokosnotenPerPiraat5 % aantalPiraten      
+    aantalKokosnotenPerPiraat6 = aantalKokosnotenPerPiraat5 - aantalKokosnotenPerPiraat5_5 - restKokosnoten5        
+    aantalKokosnotenPerPiraat6_6 = aantalKokosnotenPerPiraat6 // aantalPiraten                                  
+    restKokosnoten6 = aantalKokosnotenPerPiraat6 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat7 = aantalKokosnotenPerPiraat6 - aantalKokosnotenPerPiraat6_6 - restKokosnoten6        
+    aantalKokosnotenPerPiraat7_7 = aantalKokosnotenPerPiraat7 // aantalPiraten                                  
+    restKokosnoten7 = aantalKokosnotenPerPiraat7 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat8 = aantalKokosnotenPerPiraat7 - aantalKokosnotenPerPiraat7_7 - restKokosnoten7        
+    aantalKokosnotenPerPiraat8_8 = aantalKokosnotenPerPiraat8 // aantalPiraten                                  
+    restKokosnoten8 = aantalKokosnotenPerPiraat8 % aantalPiraten                                                    
+    aantalKokosnotenPerPiraat9 = aantalKokosnotenPerPiraat8 - aantalKokosnotenPerPiraat8_8 - restKokosnoten8        
+    aantalKokosnotenPerPiraat9_9 = aantalKokosnotenPerPiraat9 // aantalPiraten                                  
+    restKokosnoten9 = aantalKokosnotenPerPiraat9 % aantalPiraten    
+    aantalKokosnotenPerPiraat9_1 = aantalKokosnotenPerPiraat9 - aantalKokosnotenPerPiraat9_9 - restKokosnoten9        
+    aantalKokosnotenPerPiraat9_9_1 = aantalKokosnotenPerPiraat9_1 // aantalPiraten                                  
+    restKokosnoten9_1 = aantalKokosnotenPerPiraat9_1 % aantalPiraten  
+
+    aantalKokosnoten = str(aantalKokosnoten)
+    aantalKokosnotenPerPiraat = str(aantalKokosnotenPerPiraat)
+    restKokosnoten = str(restKokosnoten)
+    aantalKokosnotenPerPiraat2 = str(aantalKokosnotenPerPiraat2)
+    aantalKokosnotenPerPiraat2_2 = str(aantalKokosnotenPerPiraat2_2)
+    restKokosnoten2 = str(restKokosnoten2)
+    aantalKokosnotenPerPiraat3 = str(aantalKokosnotenPerPiraat3)
+    aantalKokosnotenPerPiraat3_3 = str(aantalKokosnotenPerPiraat3_3)
+    restKokosnoten3 = str(restKokosnoten3)
+    aantalKokosnotenPerPiraat4 = str(aantalKokosnotenPerPiraat4)
+    aantalKokosnotenPerPiraat4_4 = str(aantalKokosnotenPerPiraat4_4)
+    restKokosnoten4 = str(restKokosnoten4)
+    aantalKokosnotenPerPiraat5 = str(aantalKokosnotenPerPiraat5)
+    aantalKokosnotenPerPiraat5_5 = str(aantalKokosnotenPerPiraat5_5)
+    restKokosnoten5 = str(restKokosnoten5)
+    aantalKokosnotenPerPiraat6 = str(aantalKokosnotenPerPiraat6)
+    aantalKokosnotenPerPiraat6_6 = str(aantalKokosnotenPerPiraat6_6)
+    restKokosnoten6 = str(restKokosnoten6)
+    aantalKokosnotenPerPiraat7 = str(aantalKokosnotenPerPiraat7)
+    aantalKokosnotenPerPiraat7_7 = str(aantalKokosnotenPerPiraat7_7)
+    restKokosnoten7 = str(restKokosnoten7)
+    aantalKokosnotenPerPiraat8 = str(aantalKokosnotenPerPiraat8)
+    aantalKokosnotenPerPiraat8_8 = str(aantalKokosnotenPerPiraat8_8)
+    restKokosnoten8 = str(restKokosnoten8)
+    aantalKokosnotenPerPiraat9 = str(aantalKokosnotenPerPiraat9)
+    aantalKokosnotenPerPiraat9_9 = str(aantalKokosnotenPerPiraat9_9)
+    restKokosnoten9 = str(restKokosnoten9)
+    aantalKokosnotenPerPiraat9_1 = str(aantalKokosnotenPerPiraat9_1)
+    aantalKokosnotenPerPiraat9_9_1 = str(aantalKokosnotenPerPiraat9_9_1)
+    restKokosnoten9_1 = str(restKokosnoten9_1)
+    if restKokosnoten == "0":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en geen noten voor de aap")
+    elif restKokosnoten == "1":
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noot voor de aap")
+    else:
+        print(aantalKokosnoten + " noten = " + aantalKokosnotenPerPiraat + " noten voor piraat#1 en " + restKokosnoten +" noten voor de aap")
+    if restKokosnoten2 == "0":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en geen noten voor de aap")
+    elif restKokosnoten2 == "1":
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat2 + " noten = " + aantalKokosnotenPerPiraat2_2 + " noten voor piraat#2 en " + restKokosnoten2 +" noten voor de aap")
+    if restKokosnoten3 == "0":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en geen noten voor de aap")
+    elif restKokosnoten3 == "1":
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat3 + " noten = " + aantalKokosnotenPerPiraat3_3 + " noten voor piraat#3 en " + restKokosnoten3 +" noten voor de aap")
+    if restKokosnoten4 == "0":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en geen noten voor de aap")
+    elif restKokosnoten4 == "1":
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat4 + " noten = " + aantalKokosnotenPerPiraat4_4 + " noten voor piraat#4 en " + restKokosnoten4 +" noten voor de aap")
+    if restKokosnoten5 == "0":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en geen noten voor de aap")
+    elif restKokosnoten5 == "1":
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat5 + " noten = " + aantalKokosnotenPerPiraat5_5 + " noten voor piraat#5 en " + restKokosnoten5 +" noten voor de aap")
+    if restKokosnoten6 == "0":
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en geen noten voor de aap")
+    elif restKokosnoten6 == "1":
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en " + restKokosnoten6 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat6 + " noten = " + aantalKokosnotenPerPiraat6_6 + " noten voor piraat#6 en " + restKokosnoten6 +" noten voor de aap")
+    if restKokosnoten7 == "0":
+        print(aantalKokosnotenPerPiraat7 + " noten = " + aantalKokosnotenPerPiraat7_7 + " noten voor piraat#7 en geen noten voor de aap")
+    elif restKokosnoten7 == "1":
+        print(aantalKokosnotenPerPiraat7 + " noten = " + aantalKokosnotenPerPiraat7_7 + " noten voor piraat#7 en " + restKokosnoten7 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat7 + " noten = " + aantalKokosnotenPerPiraat7_7 + " noten voor piraat#7 en " + restKokosnoten7 +" noten voor de aap")
+    if restKokosnoten8 == "0":
+        print(aantalKokosnotenPerPiraat8 + " noten = " + aantalKokosnotenPerPiraat8_8 + " noten voor piraat#8 en geen noten voor de aap")
+    elif restKokosnoten8 == "1":
+        print(aantalKokosnotenPerPiraat8 + " noten = " + aantalKokosnotenPerPiraat8_8 + " noten voor piraat#8 en " + restKokosnoten8 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat8 + " noten = " + aantalKokosnotenPerPiraat8_8 + " noten voor piraat#8 en " + restKokosnoten8 +" noten voor de aap")
+    if restKokosnoten9 == "0":
+        print(aantalKokosnotenPerPiraat9 + " noten = " + aantalKokosnotenPerPiraat9_9 + " noten voor piraat#9 en geen noten voor de aap")
+    elif restKokosnoten9 == "1":
+        print(aantalKokosnotenPerPiraat9 + " noten = " + aantalKokosnotenPerPiraat9_9 + " noten voor piraat#9 en " + restKokosnoten9 +" noot voor de aap")
+    else:
+        print(aantalKokosnotenPerPiraat9 + " noten = " + aantalKokosnotenPerPiraat9_9 + " noten voor piraat#9 en " + restKokosnoten9 +" noten voor de aap")
+    if restKokosnoten9_1 == "0":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat9_9_1 + " noten en geen noten voor de aap")
+    elif restKokosnoten9_1 == "1":
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat9_9_1 + " noten en " + restKokosnoten9_1 +" noot voor de aap")
+    else:
+        print("elke piraat krijgt " + aantalKokosnotenPerPiraat9_9_1 + " noten en " + restKokosnoten9_1 + " noten voor de aap")
+else:
+    print("Geen resultaat")

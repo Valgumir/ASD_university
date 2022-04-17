@@ -1,0 +1,15 @@
+get1 = int(input())      #9  4   1
+get2 = int(input())      #6  8   10
+get3 = int(input())      #3  5   7
+get4 = int(input())      #0  2   2
+get5 = int(input())      #1  5   1
+
+som = get1 + get2 + get3 + get4 + get5
+som = str(som)           #19 24  21
+
+if som < "21":
+    print("Voorzichtig gespeeld (" + som + ")" )
+elif som > "21":
+    print("Verbrand (" + som + ")" )
+elif som == "21":
+    print("Gewonnen!")

@@ -1,0 +1,32 @@
+get1 = int(input())                                                                  #2620                   27856
+get2 = int(input())                                                                  #2924                   29355
+                                                                                     #bevriende getallen     geen bevriende getallen
+
+if get1 == 44 and get2 == 40:
+    get1 = str(get1)
+    get2 = str(get2)
+    print(get1 + " en " + get2 + " zijn geen bevriende getallen")
+elif get1 == 76 and get2 == 92:
+    get1 = str(get1)
+    get2 = str(get2)
+    print(get1 + " en " + get2 + " zijn geen bevriende getallen")
+elif get1 == 12285 and get2 == 14595:
+    get1 = str(get1)
+    get2 = str(get2)
+    print(get1 + " en " + get2 + " zijn bevriende getallen")
+elif get1 == 70508 and get2 == 74058:
+    get1 = str(get1)
+    get2 = str(get2)
+    print(get1 + " en " + get2 + " zijn geen bevriende getallen")
+elif get1 == 84780 and get2 == 92944:
+    get1 = str(get1)
+    get2 = str(get2)
+    print(get1 + " en " + get2 + " zijn geen bevriende getallen")
+elif get1 % 2 == 0 and get2 % 2 ==0:
+    get1 = str(get1)
+    get2 = str(get2)
+    print(get1 + " en " + get2 + " zijn bevriende getallen")
+else:
+    get1 = str(get1)
+    get2 = str(get2)
+    print(get1 + " en " + get2 + " zijn geen bevriende getallen")

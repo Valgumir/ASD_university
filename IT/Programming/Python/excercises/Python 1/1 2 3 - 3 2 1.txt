@@ -1,0 +1,7 @@
+getal1 = int(input("Enter a number:" ))
+getal2 = int(input("Enter a number:" ))
+getal3 = int(input("Enter a number:" ))
+getal1_as_String = str(getal1)
+getal2_as_String = str(getal2)
+getal3_as_String = str(getal3)
+print(getal3_as_String + ' ' + getal2_as_String + ' ' + getal1_as_String)

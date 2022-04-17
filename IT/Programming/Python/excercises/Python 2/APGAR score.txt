@@ -1,0 +1,70 @@
+A_1 = str(input("Ademhaling: "))
+P = int(input("Pols- / hartslag: "))
+G = str(input("Spierspanning / -tonus: "))
+A_2 = str(input("Aspect / kleur: "))
+R = str(input("Reactie op prikkels: "))
+
+#goed doorhuilen + 0 + actieve beweging + blauw + krachtig huilen
+
+Ascore_1 = 0
+Pscore = 0
+Gscore = 0
+Ascore_2 = 0
+Rscore = 0
+ongeldig = 0
+
+if A_1 == "geen":
+    Ascore_1 = 0
+elif A_1 == "zwak":
+    Ascore_1 = 1
+elif A_1 == "goed doorhuilen":
+    Ascore_1 = 2
+else:
+    ongeldig = 1
+
+if P == 0:
+    Pscore = 0
+elif P < 100:
+    Pscore = 1
+elif P >= 100:
+    Pscore = 2
+else:
+    ongeldig = 1
+
+if G == "slap":
+    Gscore = 0
+elif G == "enige flexie":
+    Gscore = 1
+elif G == "actieve beweging":
+    Gscore = 2
+else:
+    ongeldig = 1
+
+if A_2 == "blauw":
+    Ascore_2 = 0
+elif A_2 == "bleek":
+    Ascore_2 = 0
+elif A_2 == "extremiteiten":
+    Ascore_2 = 1
+elif A_2 == "roze":
+    Ascore_2 = 2
+else:
+    ongeldig = 1
+
+if R == "geen":
+    Rscore = 0
+elif R == "enige beweging":
+    Rscore = 1
+elif R == "krachtig huilen":
+    Rscore = 2
+else:
+    ongeldig = 1
+
+res = Ascore_1 + Pscore + Gscore + Ascore_2 + Rscore
+
+if ongeldig > 0:
+    print("ongeldige invoer")
+elif res < 4:
+    print("alarm")
+elif res > 3:
+    print(res)

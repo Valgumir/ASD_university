@@ -1,0 +1,46 @@
+class HashSet:
+
+    def __init__(self, max_size=10):
+        self._data = [None] * max_size
+        self.deleted = [False] * max_size
+        self._max_size = max_size
+        self._num_items = 0
+
+    def add(self, item):
+        if self._num_items == self._max_size:
+            #tabel is vol
+            raise[ValueError("HashSet is vol")]
+        self._num_items += 1
+        index = hash(item) % self._max_size
+        #botsing? opschuiven
+        while self._data[index] is not None:
+            print(index)
+            index += 1
+            if index == self._max_size:
+                index = 0
+        self._data[index] = item
+        self.deleted[index] = False
+        return index
+
+    def index_of(self, item):
+        index = hash(item) % self._max_size
+        num_tries = 0
+        while num_tries < self._max_size and self._data[index] != item and (self._data[index] is not None or self.deleted[index]):
+            print(index)
+            index+=1
+            if index == self._max_size:
+                index = 0
+            num_tries += 1
+        return index if self._data[index] == item else -1
+
+    def delete(self, item):
+        index = self.index_of(item)
+        if index == -1:
+            return False
+        self._data[index] = None
+        self.deleted[index] = True
+        self._num_items -= 1
+        return True
+
+    def hash_index(self, item):
+        return hash(item) % self._max_size

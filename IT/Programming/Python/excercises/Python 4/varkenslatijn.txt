@@ -1,0 +1,54 @@
+# https://regexr.com/ extra speciale tekens meer info -> https://www.w3schools.com/python/python_regex.asp 
+import re
+def varkenswoord(string):   #varkenswoord('egg')    -> 'eggway'
+    string = str(string)
+    resultaat = string
+    teller = 0
+    while len(string) > teller and string[teller].lower() not in ["a", "e", "i", "o", "u"]:
+        teller = teller + 1
+    if string[teller-1].lower() == "q" and string[teller].lower() == "u":
+        teller = teller + 1
+    if string[0].isupper() and teller != 0:
+        if string[teller].isupper():
+            resultaat = resultaat[teller:teller+1].upper() + resultaat[teller+1:] + resultaat[:teller]
+        else:
+            resultaat = resultaat[teller:teller+1].upper() + resultaat[teller+1:] + string[0].lower() + resultaat[1:teller]
+    else:
+        resultaat = resultaat[teller:] + resultaat[:teller]
+    if bool(teller):
+        resultaat = resultaat + "ay"
+    else:
+        resultaat = resultaat + "way"
+    return resultaat
+
+def varkenslatijn(string):
+    string = str(string)
+    resultaat = []
+    woorden = string.split(' ')
+    for woord in woorden:
+        if re.search(r'\W', woord):
+            resultaat.append(latiniseSpecialWords(woord))
+        else:
+            resultaat.append(varkenswoord(woord))
+    return " ".join(resultaat)
+
+def latiniseSpecialWords(woord):
+    woord = str(woord)
+    Lengtewoord = len(woord)
+    if re.match(r'\W+$', woord):
+        return woord
+    if re.match(r'\w+\W$', woord):
+        aantal1 = 0
+        for _ in range(Lengtewoord):
+            if re.match(r'\W', woord[aantal1]):
+                break
+            aantal1 = aantal1 + 1
+        return varkenswoord(woord[:aantal1]) + woord[aantal1]
+    if re.search(r'\W', woord):
+        aantal1 = 0
+        for _ in range(Lengtewoord):
+            if re.match(r'\W', woord[aantal1]):
+                break
+            aantal1 = aantal1 + 1
+        return latiniseSpecialWords(woord[:aantal1+1]) + latiniseSpecialWords(woord[aantal1+1:])
+    return varkenswoord(woord)

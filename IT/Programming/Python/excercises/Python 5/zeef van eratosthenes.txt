@@ -1,0 +1,15 @@
+#https://www.geeksforgeeks.org/python-program-for-sieve-of-eratosthenes/
+def zeef(get1): #zeef(6)
+    get1Tot = get1 + 1
+    get2 = [True for i in range (get1Tot)]
+    get3 = 2
+    while (get3 * get3 <= get1):
+        if (get2[get3] == True):
+            for i in range(get3 ** 2, get1 + 1, get3):
+                get2[i] = False
+        get3 = get3 + 1
+    get2[0]= False
+    get2[1]= False
+
+    result = [i for i, x in enumerate(get2) if x]
+    return result

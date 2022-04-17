@@ -1,0 +1,20 @@
+#https://codereview.stackexchange.com/questions/160840/basic-python-oo-bank-account
+class BankRekening:
+    def __init__(self, name, rekeningnummer, balance=0):
+        name = str(name)
+        rekeningnummer = str(rekeningnummer)
+        self.name = name
+        self.rekeningnummer = rekeningnummer
+        self.balance = balance
+    def storten(self, amount):
+        self.balance += amount
+    def afhalen(self, amount):
+        self.balance -= amount
+
+    def __repr__(self):
+        res = str(f"BankRekening('{self.name}', '{self.rekeningnummer}', {self.balance})")
+        #return '{0.__class__.__name__}({0.name}, {0.rekeningnummer}, {0.balance})'.format(self)
+        #print(f"BankRekening('{self.name}', '{self.rekeningnummer}', {self.balance})")
+        return res
+    def __str__(self):
+        return '{}, {}, bedrag: {}'.format(self.name, self.rekeningnummer, self.balance)

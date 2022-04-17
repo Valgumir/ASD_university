@@ -1,0 +1,143 @@
+#Hoofdstuk 2: gelinkte lijsten
+
+#Stapel met gelinkte lijst:
+class StackList:
+
+    class Knoop:
+        def __init__(self, data=None, volgende=None):
+            self.data = data
+            self.volgende = volgende
+
+    def __init__(self):
+        self.t = None
+
+    def empty(self):
+        return (self.t == None)
+
+    def push(self, data):
+        hulp = self.Knoop()
+        hulp.data = data
+        hulp.volgende = self.t
+        self.t = hulp
+
+    def peek(self):
+        return self.t.data
+
+    def pop(self):
+        x = self.t.data
+        self.t = self.t.volgende
+        return x
+
+
+#Wachtrij met gelinkte lijst
+class QueueList:
+
+    class Knoop:
+        def __init__(self, data=None, volgende=None):
+            self.data = data
+            self.volgende = volgende
+
+    def __init__(self):
+        self.k = None
+        self.s = None
+
+    def empty(self):
+        return self.k is None
+
+    def enqueue(self, data):
+        help = self.Knoop(data)
+        if self.empty():
+            self.k = help
+            self.s = help
+        else:
+            self.s.volgende = help
+            self.s = help
+
+    def front(self):
+        return self.k.data
+
+    def dequeue(self):
+        x = self.k.data
+        if self.k == self.s:
+            self.k = None
+            self.s = None
+        else:
+            self.k = self.k.volgende
+        return x
+
+    def invert(self):
+        if not self.empty():
+            hulp = self.k
+            vorig = None
+            while hulp.volgende is not None:
+                volgende = hulp.volgende
+                hulp.volgende = vorig
+                vorig = hulp
+                hulp = volgende
+            hulp.volgende = vorig
+            hulp2 = self.k
+            self.k = self.s
+            self.s = hulp2
+
+
+
+#Rekenmachine
+def evalueer_postfix(expressie):
+    stapel = []
+    for symbool in expressie:
+      if symbool.isnumeric():
+        stapel.append(symbool)
+      else: # operator of haakje
+        op1 = stapel.pop()
+        op2 = stapel.pop()
+        uitkomst = voerBewerkingUit(float(op1),float(op2), symbool)
+        stapel.append(uitkomst)
+    return stapel.pop()
+def voerBewerkingUit(op1, op2, bewerking):
+    if bewerking == '+':
+      return op1 + op2
+    elif bewerking == "-":
+      return op2 - op1
+    elif bewerking == '*':
+      return op1 * op2
+    elif bewerking == '/':
+      return op2 / op1
+def infix_naar_postfix(expressie):
+  stapel = []
+  uitvoer = []
+  for symbool in expressie:
+    if symbool.isnumeric():
+      uitvoer.append(symbool)
+    else: # operator of haakje
+      if symbool == ')': #sluitend haakje --> stapel kan niet leeg zijn, open haakje sws
+        bovenste = stapel.pop()
+        while(bovenste != "("):
+          uitvoer.append(bovenste)
+          bovenste = stapel.pop()
+        #Openend haakje hier
+
+      elif len(stapel) == 0 or symbool == '(' or prioriteit(symbool) > prioriteit(stapel[-1]):
+        stapel.append(symbool)
+      else: # operator met lage prioriteit of sluitend haakje
+        while len(stapel) > 0 and (prioriteit(stapel[-1]) >= prioriteit(symbool)):
+          uitvoer.append(stapel.pop())
+        stapel.append(symbool)
+  while len(stapel) > 0:
+    uitvoer.append(stapel.pop())
+  return uitvoer
+def prioriteit(operator):
+    if operator == '*' or operator == '/':
+      return 2
+    elif operator == "+" or operator == '-':
+      return 1
+    else:
+      return 0
+def rekenmachine(infix_string):
+    infix_tokens = infix_string.split()
+    postfix = infix_naar_postfix(infix_tokens)
+    return evalueer_postfix(postfix)
+    
+infix = ["3","*", "5"]
+print(infix_naar_postfix(infix))
+
+

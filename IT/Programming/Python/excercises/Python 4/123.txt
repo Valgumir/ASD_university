@@ -1,0 +1,16 @@
+def evenOneven(getal):
+    getal = int(getal)
+    positieven = [int(x) for x in str(getal) if int(x) % 2 == 0]
+    return (len(positieven), len(str(getal))-len(positieven))
+def volgende(getal):
+    getal = int(getal)
+    positieven, negatieven = evenOneven(getal)
+    return int(str(positieven) + str(negatieven) + str(len(str(getal))))
+def stappen(getal):
+    getal = int(getal)
+    resultaat = getal
+    teller = 0
+    while resultaat != 123:
+        teller = teller + 1
+        resultaat = volgende(resultaat)
+    return teller

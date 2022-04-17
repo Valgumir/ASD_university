@@ -1,0 +1,24 @@
+RodeWitteRozen = input()
+WitteBlauweRozen = input()
+RodeWitteRozen = int(RodeWitteRozen)
+WitteBlauweRozen = int(WitteBlauweRozen)
+SpeciaalTeken = input()
+RodeRozen, WitteRozen, BlauweRozen = 2, 2, 2
+if RodeWitteRozen > WitteBlauweRozen:
+    RodeRozen = RodeWitteRozen - WitteBlauweRozen + 2
+    WitteRozen = RodeWitteRozen - RodeRozen
+    BlauweRozen = WitteBlauweRozen - WitteRozen
+elif SpeciaalTeken == '<':
+    BlauweRozen = WitteBlauweRozen - RodeWitteRozen + 2
+    WitteRozen = WitteBlauweRozen - BlauweRozen
+    RodeRozen = RodeWitteRozen - WitteRozen
+else:
+    BlauweRozen = WitteBlauweRozen - RodeWitteRozen + 4
+    WitteRozen = WitteBlauweRozen - BlauweRozen
+    if WitteRozen == 1:
+        WitteRozen = WitteRozen + 1
+        BlauweRozen = BlauweRozen - 1
+    RodeRozen = RodeWitteRozen - WitteRozen
+print(BlauweRozen)
+print(WitteRozen)
+print(RodeRozen)

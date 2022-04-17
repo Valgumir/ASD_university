@@ -1,0 +1,11 @@
+get1 = int(input("Geef een getal: "))
+get2 = int(input("Geef een getal: "))
+get3 = int(input("Geef een getal: "))
+get4 = int(input("Geef een getal: "))
+get5 = int(input("Geef een getal: "))
+get6 = int(input("Geef een getal: "))
+get7 = int(input("Geef een getal: "))
+get8 = int(input("Geef een getal: "))
+get9 = int(input("Geef een getal: "))
+get10 = (get1 * 1 + get2 * 2 + get3 * 3 + get4 * 4 + get5 *5 + get6 * 6 + get7 *7 + get8 * 8 + get9 * 9) % 11
+print (get10)

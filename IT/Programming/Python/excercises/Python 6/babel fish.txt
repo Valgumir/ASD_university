@@ -1,0 +1,11 @@
+dictionary = {}
+
+def addTranslation(newWord, word, dictionary):
+    dictionary[newWord] = word
+    #return dictionary
+
+def translation(word, dictionary):
+    if not word in dictionary:
+        return "???"
+    else:
+        return dictionary.get(word)

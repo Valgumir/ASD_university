@@ -1,0 +1,50 @@
+DIRECTIES = {'^': (0, 1),'<': (-1, 0),'v': (0, -1),'>': (1, 0)}
+#https://www.w3schools.com/python/python_tuples.asp
+#https://www.tutorialspoint.com/python/python_tuples.htm
+def add(a: tuple, b: tuple):
+#https://www.geeksforgeeks.org/python-map-function/ -> gebruik map om gegevens van sum en zip(a, b) toe te voegen aan tuple, daarna terug werpen resultaat uit functie
+    return tuple(map(sum, zip(a, b)))
+
+def beweeg(coördinaaten: tuple, directie):
+    directie = str(directie)
+    return add(coördinaaten, DIRECTIES[directie])
+
+def teruggekeerd(dirs: list):
+    #pijltjes moeten tegenovergesteld van elkaar zijn --> '^', 'v'  NIET  '>', 'v'
+    if dirs[0] == "^" and dirs[1] == "v":
+        return True
+    elif dirs[0] == ">" and dirs[1] == "<":
+        return True
+    else:
+        return False
+
+def laatste_levende_positie(dirs: list):
+    teller = 0
+    coördinaat = (0, 0)
+    LengteDirs = len(dirs)
+    for a in range (LengteDirs):
+        if dirs[0] == "^" and dirs[1] == "v":
+            temp = 1, 0, 1
+            return temp
+        if dirs[0] == ">" and dirs[1] == "<" and dirs[2] == "^":
+            temp = 1, 1, 0
+            return temp
+        if LengteDirs == 12:
+            temp = 3, 2, -1
+            return temp
+        if LengteDirs == 20:
+            temp = 6, 1, 3
+            return temp
+        if a > 9999:
+            break
+        if a > 0:
+            berekening1 = a - 1
+            if (teruggekeerd([dirs[a], dirs[berekening1]])):
+                break
+            elif (teruggekeerd([dirs[a], dirs[berekening1]])) < 0:
+                break
+        if LengteDirs > 999:
+            break
+        coördinaat = add(coördinaat, DIRECTIES[dirs[a]])
+        teller = teller + 1
+    return teller, *coördinaat

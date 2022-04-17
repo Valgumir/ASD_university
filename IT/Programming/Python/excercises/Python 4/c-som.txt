@@ -1,0 +1,8 @@
+def csom(nm):
+    if nm < 10:
+        return nm
+    while nm > 9:
+        res = [int(x) for x in str(nm)] 
+        get2 = sum(res)
+        nm = get2
+    return nm
